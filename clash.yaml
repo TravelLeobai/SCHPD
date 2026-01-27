@@ -1,0 +1,1328 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+ipv6: true
+external-controller: 127.0.0.1:6170
+dns:
+  enable: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/15
+  nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
+proxy-groups:
+- name: 手动选择
+  type: select
+  proxies: &id001
+  - 🇦🇺 澳大利亚 01 @SCHPD_SUB
+  - 🇦🇺 澳大利亚 02 @SCHPD_SUB
+  - 🇩🇪 德国 01 @SCHPD_SUB
+  - 🇩🇪 德国 02 @SCHPD_SUB
+  - 🇩🇪 德国 03 @SCHPD_SUB
+  - 🇩🇪 德国 04 @SCHPD_SUB
+  - 🇩🇪 德国 05 @SCHPD_SUB
+  - 🇩🇪 德国 06 @SCHPD_SUB
+  - 🇩🇪 德国 07 @SCHPD_SUB
+  - 🇩🇪 德国 08 @SCHPD_SUB
+  - 🇩🇪 德国 09 @SCHPD_SUB
+  - 🇫🇮 芬兰 01 @SCHPD_SUB
+  - 🇫🇷 法国 01 @SCHPD_SUB
+  - 🇫🇷 法国 02 @SCHPD_SUB
+  - 🇬🇧 英国 01 @SCHPD_SUB
+  - 🇬🇧 英国 02 @SCHPD_SUB
+  - 🇬🇧 英国 03 @SCHPD_SUB
+  - 🇬🇧 英国 04 @SCHPD_SUB
+  - 🇭🇰 香港 01 @SCHPD_SUB
+  - 🇭🇰 香港 02 @SCHPD_SUB
+  - 🇭🇰 香港 03 @SCHPD_SUB
+  - 🇭🇰 香港 04 @SCHPD_SUB
+  - 🇭🇰 香港 05 @SCHPD_SUB
+  - 🇭🇰 香港 06 @SCHPD_SUB
+  - 🇭🇰 香港 07 @SCHPD_SUB
+  - 🇭🇰 香港 08 @SCHPD_SUB
+  - 🇭🇰 香港 09 @SCHPD_SUB
+  - 🇭🇰 香港 10 @SCHPD_SUB
+  - 🇮🇳 印度尼西亚 01 @SCHPD_SUB
+  - 🇯🇵 日本 01 @SCHPD_SUB
+  - 🇯🇵 日本 02 @SCHPD_SUB
+  - 🇯🇵 日本 03 @SCHPD_SUB
+  - 🇯🇵 日本 04 @SCHPD_SUB
+  - 🇯🇵 日本 05 @SCHPD_SUB
+  - 🇯🇵 日本 06 @SCHPD_SUB
+  - 🇰🇿 哈萨克斯坦 01 @SCHPD_SUB
+  - 🇳🇱 荷兰 01 @SCHPD_SUB
+  - 🇳🇱 荷兰 02 @SCHPD_SUB
+  - 🇳🇱 荷兰 03 @SCHPD_SUB
+  - 🇳🇱 荷兰 04 @SCHPD_SUB
+  - 🇳🇴 挪威 01 @SCHPD_SUB
+  - 🇵🇱 波兰 01 @SCHPD_SUB
+  - 🇷🇺 俄罗斯联邦 01 @SCHPD_SUB
+  - 🇷🇺 俄罗斯联邦 02 @SCHPD_SUB
+  - 🇷🇺 俄罗斯联邦 03 @SCHPD_SUB
+  - 🇷🇺 俄罗斯联邦 04 @SCHPD_SUB
+  - 🇷🇺 俄罗斯联邦 05 @SCHPD_SUB
+  - 🇷🇺 俄罗斯联邦 06 @SCHPD_SUB
+  - 🇷🇺 俄罗斯联邦 07 @SCHPD_SUB
+  - 🇸🇬 新加坡 01 @SCHPD_SUB
+  - 🇸🇬 新加坡 02 @SCHPD_SUB
+  - 🇹🇷 土耳其 01 @SCHPD_SUB
+  - 🇺🇸 美国 01 @SCHPD_SUB
+  - 🇺🇸 美国 02 @SCHPD_SUB
+  - 🇺🇸 美国 03 @SCHPD_SUB
+  - 🇺🇸 美国 04 @SCHPD_SUB
+  - 🇺🇸 美国 05 @SCHPD_SUB
+  - 🇺🇸 美国 06 @SCHPD_SUB
+  - 🇺🇸 美国 07 @SCHPD_SUB
+  - 🇺🇸 美国 08 @SCHPD_SUB
+  - 🇺🇸 美国 09 @SCHPD_SUB
+  - 🇺🇸 美国 10 @SCHPD_SUB
+  - 🇺🇸 美国 11 @SCHPD_SUB
+  - 🇺🇸 美国 12 @SCHPD_SUB
+  - 🌐 塞浦路斯 01 @SCHPD_SUB
+  - 🌐 塞舌尔 01 @SCHPD_SUB
+  - 🌐 拉脱维亚 01 @SCHPD_SUB
+  - 🌐 未知 01 @SCHPD_SUB
+  - 🌐 未知 02 @SCHPD_SUB
+  - 🌐 未知 03 @SCHPD_SUB
+  - 🌐 未知 04 @SCHPD_SUB
+  - 🌐 未知 05 @SCHPD_SUB
+  - 🌐 未知 06 @SCHPD_SUB
+  - 🌐 未知 07 @SCHPD_SUB
+  - 🌐 未知 08 @SCHPD_SUB
+  - 🌐 爱沙尼亚 01 @SCHPD_SUB
+  - 🌐 阿尔巴尼亚 01 @SCHPD_SUB
+  - 🌐 阿尔巴尼亚 02 @SCHPD_SUB
+  - ☁️ Cloudflare 01 @SCHPD_SUB
+  - ☁️ Cloudflare 02 @SCHPD_SUB
+  - ☁️ Cloudflare 03 @SCHPD_SUB
+  - ☁️ Cloudflare 04 @SCHPD_SUB
+  - ☁️ Cloudflare 05 @SCHPD_SUB
+  - ☁️ Cloudflare 06 @SCHPD_SUB
+  - ☁️ Cloudflare 07 @SCHPD_SUB
+  - ☁️ Cloudflare 08 @SCHPD_SUB
+  - ☁️ Cloudflare 09 @SCHPD_SUB
+  - ☁️ Cloudflare 10 @SCHPD_SUB
+  - ☁️ Cloudflare 11 @SCHPD_SUB
+  - ☁️ Cloudflare 12 @SCHPD_SUB
+- name: 自动选择
+  type: url-test
+  url: http://connectivitycheck.gstatic.com/generate_204
+  interval: 300
+  proxies: *id001
+- name: Proxy
+  type: select
+  proxies:
+  - 手动选择
+  - 自动选择
+  - DIRECT
+  - REJECT
+rules:
+- MATCH,Proxy
+proxies:
+- name: 🌐 未知 01 @SCHPD_SUB
+  type: trojan
+  server: kfjdi.pages.dev
+  port: 443
+  password: er668
+  skip-cert-verify: false
+  tls: false
+  ws-opts:
+    path: 🔒
+  udp: true
+- name: 🇭🇰 香港 01 @SCHPD_SUB
+  type: vmess
+  server: 5804d996-t70f40-tonrmx-8n27.hkt.gotochinatown.net
+  port: 80
+  uuid: 5dc6fa05-a601-aba6-7761-ecde22d2b0fc
+  alterId: 2
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5804d996-t70f40-tonrmx-8n27.hkt.gotochinatown.net
+  cipher: auto
+  udp: true
+- name: 🇭🇰 香港 02 @SCHPD_SUB
+  type: vmess
+  server: 010ece56-t6r5s0-thd0h1-1rz5s.hkt.gotochinatown.net
+  port: 80
+  uuid: 40e084d6-0316-11f0-90e2-f23c913c8d2b
+  alterId: 2
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 010ece56-t6r5s0-thd0h1-1rz5s.hkt.gotochinatown.net
+  cipher: auto
+  udp: true
+- name: 🇭🇰 香港 03 @SCHPD_SUB
+  server: 58.152.53.45
+  port: 443
+  type: trojan
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+  udp: true
+- name: 🇹🇷 土耳其 01 @SCHPD_SUB
+  server: node-tr-1.v2sv.top
+  port: 2083
+  type: trojan
+  password: nodes-b211f28a
+  sni: node-tr-1.v2sv.top
+  skip-cert-verify: false
+  udp: true
+- name: 🇺🇸 美国 01 @SCHPD_SUB
+  server: cdn1.turbooserver.com
+  port: 80
+  type: trojan
+  password: TurbooServer
+  network: ws
+  ws-opts:
+    path: /ed
+  udp: true
+- name: 🇮🇳 印度尼西亚 01 @SCHPD_SUB
+  server: node-id-1.v2sv.top
+  port: 2083
+  type: trojan
+  password: nodes-b211f28a
+  sni: node-id-1.v2sv.top
+  skip-cert-verify: false
+  udp: true
+- name: 🇫🇷 法国 01 @SCHPD_SUB
+  server: node-fr-1.v2sv.top
+  port: 2083
+  type: trojan
+  password: nodes-b211f28a
+  sni: node-fr-1.v2sv.top
+  udp: true
+- name: 🇭🇰 香港 04 @SCHPD_SUB
+  server: 219.76.135.98
+  port: 443
+  type: trojan
+  password: BxceQaOe
+  sni: 219.76.135.98
+  skip-cert-verify: true
+  udp: true
+- name: ☁️ Cloudflare 01 @SCHPD_SUB
+  server: 104.18.32.47
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.multiplydose.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.multiplydose.com
+  udp: true
+- name: ☁️ Cloudflare 02 @SCHPD_SUB
+  server: www.gossipglove.com
+  port: 443
+  type: trojan
+  password: humanity
+  udp: true
+- name: 🇩🇪 德国 01 @SCHPD_SUB
+  server: 45.32.158.138
+  port: 20994
+  type: trojan
+  password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
+  udp: true
+- name: 🇳🇴 挪威 01 @SCHPD_SUB
+  server: 80.173.231.254
+  port: 12420
+  type: trojan
+  password: wp9IsiY82uQhcmgNC1eoBM
+  sni: www.semanticstaplegun.click
+  udp: true
+- name: 🇯🇵 日本 01 @SCHPD_SUB
+  server: 160.16.132.38
+  port: 3423
+  type: trojan
+  password: 869e9086806483ca4744a4cb0f3d6e16
+  sni: www.nintendogames.net
+  skip-cert-verify: false
+  udp: true
+- name: 🇯🇵 日本 02 @SCHPD_SUB
+  server: 160.16.72.33
+  port: 544
+  type: trojan
+  password: 869e9086806483ca4744a4cb0f3d6e16
+  sni: www.nintendogames.net
+  skip-cert-verify: false
+  udp: true
+- name: ☁️ Cloudflare 03 @SCHPD_SUB
+  server: www.calmlunch.com
+  port: 443
+  type: trojan
+  password: humanity
+  udp: true
+- name: 🇩🇪 德国 02 @SCHPD_SUB
+  server: free-de-3.undef.network
+  port: 443
+  type: trojan
+  password: xtA6WF92Itmhm9jfvXUH1MDVL
+  sni: free-de-3.undef.network
+  network: ws
+  ws-opts:
+    path: /f2fc2a1f
+    headers:
+      Host: free-de-3.undef.network
+  udp: true
+- name: 🇯🇵 日本 03 @SCHPD_SUB
+  server: 160.16.132.38
+  port: 4006
+  type: trojan
+  password: 869e9086806483ca4744a4cb0f3d6e16
+  sni: www.nintendogames.net
+  skip-cert-verify: false
+  udp: true
+- name: 🇭🇰 香港 05 @SCHPD_SUB
+  server: 58.152.25.236
+  port: 443
+  type: trojan
+  password: BxceQaOe
+  udp: true
+- name: 🇯🇵 日本 04 @SCHPD_SUB
+  server: 160.16.72.33
+  port: 3901
+  type: trojan
+  password: 869e9086806483ca4744a4cb0f3d6e16
+  sni: www.nintendogames.net
+  skip-cert-verify: true
+  udp: true
+- name: 🇷🇺 俄罗斯联邦 01 @SCHPD_SUB
+  type: vless
+  server: 45.139.26.152
+  port: 7443
+  uuid: 7fc953d6-ae75-46fb-a970-10b57d513487
+  tls: true
+  client-fingerprint: chrome
+  servername: eh.vk.com
+  network: tcp
+  reality-opts:
+    public-key: BTkKaFt2xac4xAHn3EXrBKV0d8ItHSfciMFnxg57BGA
+    short-id: fd88bd27db4cc661
+  tfo: false
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  udp: true
+- name: 🇷🇺 俄罗斯联邦 02 @SCHPD_SUB
+  type: vless
+  server: iran.zone-server-irani.ir
+  port: 443
+  uuid: 0f1b6d8d-3f8c-4713-b32d-c94947083485
+  tls: true
+  servername: apexbhao1.qzz.io
+  network: ws
+  ws-opts:
+    path: /43.218.77.16=1443
+    headers:
+      host: apexbhao1.qzz.io
+  tfo: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇦🇺 澳大利亚 01 @SCHPD_SUB
+  type: vless
+  server: vy1.sangar.net
+  port: 443
+  uuid: 5a9a33eb-546c-4ffa-aadc-1c75b3ac084b
+  tls: true
+  servername: vy1.sangar.net
+  network: tcp
+  tfo: false
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  udp: true
+- name: 🇭🇰 香港 06 @SCHPD_SUB
+  type: trojan
+  server: 58.152.110.210
+  port: 443
+  password: 869e9086806483ca4744a4cb0f3d6e16
+  tls: true
+  sni: www.nintendogames.net
+  network: tcp
+  tfo: false
+  skip-cert-verify: false
+  udp: true
+- name: 🇳🇱 荷兰 01 @SCHPD_SUB
+  type: vless
+  server: 138.124.79.3
+  port: 443
+  uuid: d6b1327d-2bec-4366-a3a1-9b1284f95841
+  tls: true
+  client-fingerprint: chrome
+  servername: sun6-21.userapi.com
+  network: tcp
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  tfo: false
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  udp: true
+- name: 🌐 爱沙尼亚 01 @SCHPD_SUB
+  type: vless
+  server: 185.215.186.115
+  port: 443
+  uuid: 45e3b7ad-03b6-42fc-b616-1e92bdd0a5b3
+  tls: true
+  client-fingerprint: chrome
+  servername: hls-svod.itunes.apple.com
+  network: tcp
+  reality-opts:
+    public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+    short-id: '31'
+  tfo: false
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  udp: true
+- name: 🇳🇱 荷兰 02 @SCHPD_SUB
+  type: vless
+  server: 94.228.213.201
+  port: 443
+  uuid: 45e3b7ad-03b6-42fc-b616-1e92bdd0a5b3
+  tls: true
+  client-fingerprint: chrome
+  servername: hls-svod.itunes.apple.com
+  network: tcp
+  reality-opts:
+    public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+    short-id: 48720c
+  tfo: false
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  udp: true
+- name: 🇳🇱 荷兰 03 @SCHPD_SUB
+  type: vless
+  server: u1.mizulina.top
+  port: 22231
+  uuid: 2ad04efa-d18a-442b-875f-48d12e11d822
+  tls: true
+  servername: u1.mizulina.top
+  network: tcp
+  tfo: false
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  udp: true
+- name: 🇫🇷 法国 02 @SCHPD_SUB
+  type: vless
+  server: sktr.berkeart.ir
+  port: 19702
+  uuid: 1f3b130d-7d29-45d1-b5aa-adc5cd94a885
+  tls: true
+  client-fingerprint: chrome
+  servername: check-host.net
+  network: grpc
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  grpc-opts:
+    grpc-service-name: xyz
+  tfo: false
+  skip-cert-verify: false
+  udp: true
+- name: 🇩🇪 德国 03 @SCHPD_SUB
+  type: vless
+  server: 45.145.41.181
+  port: 98
+  uuid: 66247b1e-053a-44bf-ae3c-06437b87b3e6
+  tls: true
+  client-fingerprint: chrome
+  servername: www.latimes.com
+  network: xhttp
+  reality-opts:
+    public-key: -VZ3qK6joS4VOx3GkpDbaA9RzVUcrcivmA1RstOSHzY
+    short-id: cd59
+  tfo: false
+  skip-cert-verify: false
+  udp: true
+- name: 🇩🇪 德国 04 @SCHPD_SUB
+  type: vless
+  server: 80.66.85.115
+  port: 8443
+  uuid: 97e79a62-f686-4b91-87a7-be39c9e57658
+  tls: true
+  servername: page.anjue39.qzz.io
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: page.anjue39.qzz.io
+  tfo: false
+  skip-cert-verify: false
+  udp: true
+- name: 🇺🇸 美国 02 @SCHPD_SUB
+  type: vless
+  server: 193.42.36.191
+  port: 443
+  uuid: 45e3b7ad-03b6-42fc-b616-1e92bdd0a5b3
+  tls: true
+  client-fingerprint: chrome
+  servername: hls-svod.itunes.apple.com
+  network: tcp
+  reality-opts:
+    public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+    short-id: 86e999a2cdc2
+  tfo: false
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  udp: true
+- name: 🇩🇪 德国 05 @SCHPD_SUB
+  type: vless
+  server: 152.53.33.43
+  port: 443
+  uuid: 057b649c-54b1-4f68-86b1-90381637a2cf
+  tls: false
+  servername: ''
+  network: tcp
+  tfo: false
+  udp: true
+- name: 🇭🇰 香港 07 @SCHPD_SUB
+  type: trojan
+  server: 58.152.25.130
+  port: 443
+  password: BxceQaOe
+  tls: true
+  sni: 58.152.25.130
+  network: tcp
+  tfo: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰 香港 08 @SCHPD_SUB
+  type: trojan
+  server: hk.scpnb.top
+  port: 19066
+  password: q4oerwN2UA
+  tls: true
+  sni: www.amazon.com
+  network: grpc
+  reality-opts:
+    public-key: AxHqJCigFf4BzJlj4EeD6FloA-PYwr2rw2clWtCB4FU
+    short-id: '803975'
+  grpc-opts: {}
+  tfo: false
+  skip-cert-verify: false
+  udp: true
+- name: 🇺🇸 美国 03 @SCHPD_SUB
+  type: trojan
+  server: 208.103.161.110
+  port: 443
+  password: humanity
+  tls: true
+  sni: www.creationlong.org
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      host: www.creationlong.org
+  tfo: false
+  skip-cert-verify: false
+  udp: true
+- name: 🇫🇮 芬兰 01 @SCHPD_SUB
+  type: vless
+  server: fi.fasti.win
+  port: 443
+  uuid: 3bd011c9-c5ec-4024-8aaa-6d79db4e97d3
+  tls: true
+  client-fingerprint: chrome
+  servername: fi.fasti.win
+  network: tcp
+  reality-opts:
+    public-key: F294G-iRQHISvxNNtUtF2arP3d6pzigwfVcY2jqXcSc
+    short-id: 2a8a7bb6036e8461
+  tfo: false
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  udp: true
+- name: 🇺🇸 美国 04 @SCHPD_SUB
+  type: vless
+  server: xhero.kharabetam.de
+  port: 2053
+  uuid: 33a57acf-163f-4cdd-8b23-cc52a58f2362
+  tls: true
+  servername: mrx.xher0.de
+  network: ws
+  ws-opts:
+    path: /IfUknowThenUKnow
+    headers:
+      host: mrx.xher0.de
+  tfo: false
+  skip-cert-verify: false
+  udp: true
+- name: 🇬🇧 英国 01 @SCHPD_SUB
+  type: vless
+  server: 25.26.27.158
+  port: 2095
+  uuid: 9d095784-e03d-40f3-b7f0-61dc85dda878
+  tls: false
+  servername: ''
+  network: xhttp
+  tfo: false
+  udp: true
+- name: 🇵🇱 波兰 01 @SCHPD_SUB
+  type: vless
+  server: zen-core.megaconfig.com
+  port: 1198
+  uuid: bc9e72ba-53b1-43af-b8fe-49f6125abb2c
+  tls: true
+  client-fingerprint: chrome
+  servername: ''
+  network: tcp
+  reality-opts:
+    public-key: J4od8RrAV4Us8mO38jkKdaW6yb-8TqISgE0ttrtPoV4
+  tfo: false
+  skip-cert-verify: false
+  udp: true
+- name: 🌐 拉脱维亚 01 @SCHPD_SUB
+  type: vless
+  server: lv.fastdbn.com
+  port: 5001
+  uuid: ec7f2b6a-d627-40ea-a017-36052c4ba426
+  tls: true
+  client-fingerprint: chrome
+  servername: services.3cx.com
+  network: grpc
+  reality-opts:
+    public-key: 12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM
+  grpc-opts:
+    grpc-service-name: downloads.3cx.com
+  tfo: false
+  skip-cert-verify: false
+  udp: true
+- name: 🇬🇧 英国 02 @SCHPD_SUB
+  type: vless
+  server: 78.141.197.131
+  port: 8443
+  uuid: 34050a14-f55f-4878-981f-886ab0a52b56
+  tls: true
+  client-fingerprint: chrome
+  servername: www.refersion.com
+  network: tcp
+  reality-opts:
+    public-key: 4WqRiCOcMKx7ffnW2tQ_il4gSwuR58ReAjnwR5CfBX4
+    short-id: b873709a
+  tfo: false
+  skip-cert-verify: false
+  udp: true
+- name: 🇳🇱 荷兰 04 @SCHPD_SUB
+  type: vless
+  server: 94.228.215.12
+  port: 443
+  uuid: 45e3b7ad-03b6-42fc-b616-1e92bdd0a5b3
+  tls: true
+  client-fingerprint: chrome
+  servername: hls-svod.itunes.apple.com
+  network: tcp
+  reality-opts:
+    public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+    short-id: 48720c
+  tfo: false
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  udp: true
+- name: 🇷🇺 俄罗斯联邦 03 @SCHPD_SUB
+  type: vless
+  server: 185.234.59.173
+  port: 443
+  uuid: 45e3b7ad-03b6-42fc-b616-1e92bdd0a5b3
+  tls: true
+  client-fingerprint: chrome
+  servername: hls-svod.itunes.apple.com
+  network: tcp
+  reality-opts:
+    public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+    short-id: f79448a30d
+  tfo: false
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  udp: true
+- name: 🇷🇺 俄罗斯联邦 04 @SCHPD_SUB
+  type: vless
+  server: 92.63.177.191
+  port: 443
+  uuid: f3f6f19f-c68a-462c-a534-9b388663fffa
+  tls: true
+  client-fingerprint: chrome
+  servername: route.mcqueenconnection.ru
+  network: tcp
+  reality-opts:
+    public-key: jD0IhxEz87RZ99RKLqY1L-2MP84YH_cIsIs4cW8BOEo
+    short-id: a8e8df4f1fb3e3f5
+  tfo: false
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  udp: true
+- name: 🇷🇺 俄罗斯联邦 05 @SCHPD_SUB
+  type: vless
+  server: route.mcqueenconnection.ru
+  port: 443
+  uuid: f3f6f19f-c68a-462c-a534-9b388663fffa
+  tls: true
+  client-fingerprint: chrome
+  servername: route.mcqueenconnection.ru
+  network: tcp
+  reality-opts:
+    public-key: jD0IhxEz87RZ99RKLqY1L-2MP84YH_cIsIs4cW8BOEo
+    short-id: a8e8df4f1fb3e3f5
+  tfo: false
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  udp: true
+- name: 🇷🇺 俄罗斯联邦 06 @SCHPD_SUB
+  type: vless
+  server: 185.234.59.174
+  port: 443
+  uuid: 45e3b7ad-03b6-42fc-b616-1e92bdd0a5b3
+  tls: true
+  client-fingerprint: chrome
+  servername: hls-svod.itunes.apple.com
+  network: tcp
+  reality-opts:
+    public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+    short-id: f79448a30d
+  tfo: false
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  udp: true
+- name: 🇯🇵 日本 05 @SCHPD_SUB
+  type: trojan
+  server: 160.16.150.76
+  port: 3901
+  password: 869e9086806483ca4744a4cb0f3d6e16
+  tls: true
+  sni: www.nintendogames.net
+  network: tcp
+  tfo: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸 美国 05 @SCHPD_SUB
+  type: vless
+  server: 198.62.62.241
+  port: 443
+  uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
+  tls: true
+  servername: l.ayovo.netlib.re
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: l.ayovo.netlib.re
+  tfo: false
+  skip-cert-verify: false
+  udp: true
+- name: 🇭🇰 香港 09 @SCHPD_SUB
+  type: trojan
+  server: 203.198.122.227
+  port: 443
+  password: 869e9086806483ca4744a4cb0f3d6e16
+  tls: true
+  sni: www.nintendogames.net
+  network: tcp
+  tfo: false
+  skip-cert-verify: false
+  udp: true
+- name: 🇺🇸 美国 06 @SCHPD_SUB
+  type: vless
+  server: mkh.v2plus.ovh
+  port: 443
+  uuid: 0044dfce-62ac-4734-919a-fcbf79e9ec12
+  tls: true
+  servername: siria2.mrpixanos.ir
+  network: ws
+  ws-opts:
+    path: /
+  tfo: false
+  skip-cert-verify: false
+  udp: true
+- name: ☁️ Cloudflare 04 @SCHPD_SUB
+  type: vless
+  server: 104.17.25.173
+  port: 443
+  uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
+  tls: true
+  servername: l.ayovo.netlib.re
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: l.ayovo.netlib.re
+  tfo: false
+  skip-cert-verify: false
+  udp: true
+- name: 🌐 塞舌尔 01 @SCHPD_SUB
+  type: vless
+  server: 156.243.83.167
+  port: 443
+  uuid: telegram-id-Arfilter
+  tls: true
+  servername: cdn-alman1.arfilter2.blog
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: cdn-alman1.arfilter2.blog
+  tfo: false
+  skip-cert-verify: false
+  udp: true
+- name: ☁️ Cloudflare 05 @SCHPD_SUB
+  type: vless
+  server: zzula.ir
+  port: 443
+  uuid: c249ca6f-1bde-479b-af96-da0e948a3800
+  tls: true
+  servername: zitel.digikala-aparat-zula.com
+  network: ws
+  ws-opts:
+    path: /admin
+    headers:
+      host: zitel.digikala-aparat-zula.com
+  tfo: false
+  skip-cert-verify: false
+  udp: true
+- name: ☁️ Cloudflare 06 @SCHPD_SUB
+  type: vless
+  server: 104.21.227.134
+  port: 443
+  uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
+  tls: true
+  servername: l.ayovo.netlib.re
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: l.ayovo.netlib.re
+  tfo: false
+  skip-cert-verify: false
+  udp: true
+- name: 🇩🇪 德国 06 @SCHPD_SUB
+  type: vless
+  server: fox1.wizard2shop.org
+  port: 2083
+  uuid: 37e6fd7d-edb2-4fde-aead-0d804199c1f6
+  tls: true
+  servername: istt.wizard2shop.com
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: istt.wizard2shop.com
+  tfo: false
+  skip-cert-verify: false
+  udp: true
+- name: ☁️ Cloudflare 07 @SCHPD_SUB
+  type: vless
+  server: 104.18.185.26
+  port: 443
+  uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
+  tls: true
+  servername: l.ayovo.netlib.re
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: l.ayovo.netlib.re
+  tfo: false
+  skip-cert-verify: false
+  udp: true
+- name: 🇺🇸 美国 07 @SCHPD_SUB
+  type: vless
+  server: free1.aattaash.com
+  port: 2087
+  uuid: 77c492e6-7bff-4ce9-b76d-6e55686a577b
+  tls: true
+  servername: finland2.aattaash.com
+  network: ws
+  ws-opts:
+    path: /
+  tfo: false
+  skip-cert-verify: false
+  udp: true
+- name: ☁️ Cloudflare 08 @SCHPD_SUB
+  type: vless
+  server: cdn.sjdpictures.ir
+  port: 443
+  uuid: 32c257a1-f18c-42c7-860d-9cb0ead8b07c
+  tls: true
+  servername: delta090.qzz.io
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: delta090.qzz.io
+  tfo: false
+  skip-cert-verify: false
+  udp: true
+- name: ☁️ Cloudflare 09 @SCHPD_SUB
+  type: vless
+  server: 162.159.152.4
+  port: 443
+  uuid: 396c904b-4b62-4334-b793-ee25fc0c61cc
+  tls: true
+  servername: pages.dev
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiTHczMWlhREZIb0ljUDhoaCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560
+    headers:
+      host: 8vmU06cxdz59m931xnREgj8qpnoq1-06.pages.dev
+  tfo: false
+  skip-cert-verify: false
+  udp: true
+- name: 🇦🇺 澳大利亚 02 @SCHPD_SUB
+  type: trojan
+  server: 130.162.197.41
+  port: 21051
+  password: bUlYzLSY7D
+  tls: true
+  sni: nobitex.ir
+  network: xhttp
+  reality-opts:
+    public-key: eheXsI7zeEE5s5GTpP3yV75c_rx7-6wq3n6Bvh2p42o
+    short-id: 2f
+  tfo: false
+  skip-cert-verify: false
+  udp: true
+- name: ☁️ Cloudflare 10 @SCHPD_SUB
+  type: vless
+  server: 104.21.224.5
+  port: 443
+  uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
+  tls: true
+  servername: l.ayovo.netlib.re
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: l.ayovo.netlib.re
+  tfo: false
+  skip-cert-verify: false
+  udp: true
+- name: 🇸🇬 新加坡 01 @SCHPD_SUB
+  type: vless
+  server: 34.143.159.175
+  port: 443
+  uuid: 97e79a62-f686-4b91-87a7-be39c9e57658
+  tls: true
+  servername: page.anjue39.qzz.io
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: page.anjue39.qzz.io
+  tfo: false
+  skip-cert-verify: false
+  udp: true
+- name: 🇬🇧 英国 03 @SCHPD_SUB
+  type: vless
+  server: nodec.azurka.org
+  port: 443
+  uuid: 0d12578e-50da-41b9-a913-6c1d8c0dd713
+  tls: true
+  servername: nodec.azurka.org
+  network: grpc
+  grpc-opts:
+    grpc-service-name: api
+  tfo: false
+  skip-cert-verify: false
+  udp: true
+- name: 🇺🇸 美国 08 @SCHPD_SUB
+  type: vless
+  server: mpc.mobayandeh.top
+  port: 443
+  uuid: 74c8f7ec-9c3c-49eb-a4f3-667032b2d7dd
+  tls: true
+  servername: filamcl.wordperessweb.ir
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: filamcl.wordperessweb.ir
+  tfo: false
+  skip-cert-verify: false
+  udp: true
+- name: 🇺🇸 美国 09 @SCHPD_SUB
+  type: vless
+  server: fast.panelha.sbs
+  port: 80
+  uuid: 395dc437-3e6e-42df-8141-0f01358407b5
+  tls: false
+  servername: ''
+  network: xhttp
+  tfo: false
+  udp: true
+- name: ☁️ Cloudflare 11 @SCHPD_SUB
+  type: vless
+  server: cdn.sjdpictures.ir
+  port: 8443
+  uuid: 6a5d1316-c0a6-4963-8ee1-e8b9b5f98c20
+  tls: true
+  servername: delta090.qzz.io
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: delta090.qzz.io
+  tfo: false
+  skip-cert-verify: false
+  udp: true
+- name: 🇰🇿 哈萨克斯坦 01 @SCHPD_SUB
+  type: vless
+  server: d.brimliski.com
+  port: 443
+  uuid: farzinashourian
+  tls: true
+  servername: sanru.feri2020.ir
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      host: sanru.feri2020.ir
+  tfo: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸 美国 10 @SCHPD_SUB
+  type: vless
+  server: santa-clara-02.ptu.ink
+  port: 443
+  uuid: e5041986-523e-4311-95ea-de6e667e67f4
+  tls: true
+  client-fingerprint: chrome
+  servername: www.microsoft.com
+  network: tcp
+  reality-opts:
+    public-key: Z_V0NAxK8Srw4gsBd3LvF53JCgvP3ihwH9yxKVu5Q0U
+    short-id: 2bab2c945dcd675f
+  tfo: false
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  udp: true
+- name: 🇭🇰 香港 10 @SCHPD_SUB
+  type: vmess
+  server: 103.181.165.237
+  port: 31332
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  cipher: auto
+  tls: false
+  servername: ''
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 11 @SCHPD_SUB
+  type: vless
+  server: free1.turbovipt1.top
+  port: 2087
+  uuid: 425485f7-f54f-4834-a847-30dc2969a20b
+  tls: true
+  servername: ger2.turbovipt1.top
+  network: ws
+  ws-opts:
+    path: /
+  tfo: false
+  skip-cert-verify: false
+  udp: true
+- name: 🌐 塞浦路斯 01 @SCHPD_SUB
+  type: vless
+  server: 45.15.162.85
+  port: 443
+  uuid: 45e3b7ad-03b6-42fc-b616-1e92bdd0a5b3
+  tls: true
+  client-fingerprint: chrome
+  servername: hls-svod.itunes.apple.com
+  network: tcp
+  reality-opts:
+    public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+    short-id: f79448a30d
+  tfo: false
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  udp: true
+- name: 🌐 阿尔巴尼亚 01 @SCHPD_SUB
+  type: vless
+  server: 185.177.238.57
+  port: 443
+  uuid: c38e6142-9223-47ef-84ce-2a84a308cafb
+  tls: true
+  client-fingerprint: chrome
+  servername: al.cdn.stun.su
+  network: tcp
+  reality-opts:
+    public-key: su3dq3BDLDkX-jIjq3GyVUXwqzD7CNVYzKtOcO4HQ24
+    short-id: 4fc5e35bdb69d36b
+  tfo: false
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  udp: true
+- name: 🇷🇺 俄罗斯联邦 07 @SCHPD_SUB
+  type: vless
+  server: 95.174.92.156
+  port: 443
+  uuid: cc61ea7c-92f2-4c2d-b272-32cfe8fdf99f
+  tls: true
+  client-fingerprint: chrome
+  servername: sun6-21.userapi.com
+  network: tcp
+  reality-opts:
+    public-key: CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw
+    short-id: c7e42004e5f024be
+  tfo: false
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  udp: true
+- name: 🌐 阿尔巴尼亚 02 @SCHPD_SUB
+  type: vless
+  server: 185.177.238.99
+  port: 443
+  uuid: c38e6142-9223-47ef-84ce-2a84a308cafb
+  tls: true
+  client-fingerprint: chrome
+  servername: al.cdn.stun.su
+  network: tcp
+  reality-opts:
+    public-key: su3dq3BDLDkX-jIjq3GyVUXwqzD7CNVYzKtOcO4HQ24
+    short-id: 3846b9259d66cc64
+  tfo: false
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  udp: true
+- name: 🇩🇪 德国 07 @SCHPD_SUB
+  type: vless
+  server: fair.iranis.art
+  port: 8088
+  uuid: fbe0d38f-5d9c-4d4e-9dbd-8f96584989e0
+  tls: false
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /
+  tfo: false
+  udp: true
+- name: 🇩🇪 德国 08 @SCHPD_SUB
+  type: vless
+  server: dfg.octopusss.net
+  port: 22955
+  uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
+  tls: true
+  client-fingerprint: chrome
+  servername: one-piece.com
+  network: grpc
+  reality-opts:
+    public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
+    short-id: 6ba85179e30d4fc2
+  grpc-opts:
+    grpc-service-name: grpc
+  tfo: false
+  skip-cert-verify: false
+  udp: true
+- name: 🌐 未知 02 @SCHPD_SUB
+  type: vless
+  server: xiaoniu.niucdn.click
+  port: 20101
+  uuid: 962bffc1-16bb-4232-ae66-d366d3ea8927
+  tls: true
+  client-fingerprint: chrome
+  servername: img14.360buyimg.com
+  network: tcp
+  reality-opts:
+    public-key: GwBhOiy3pLa73zga-wmG07xRfiI71_A9VDi-DiHeBWk
+    short-id: '9153'
+  tfo: false
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  udp: true
+- name: 🌐 未知 03 @SCHPD_SUB
+  type: vless
+  server: xiaoniu.niucdn.click
+  port: 20201
+  uuid: 962bffc1-16bb-4232-ae66-d366d3ea8927
+  tls: true
+  client-fingerprint: chrome
+  servername: img14.360buyimg.com
+  network: tcp
+  reality-opts:
+    public-key: GwBhOiy3pLa73zga-wmG07xRfiI71_A9VDi-DiHeBWk
+    short-id: '9153'
+  tfo: false
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  udp: true
+- name: 🇸🇬 新加坡 02 @SCHPD_SUB
+  type: vless
+  server: 201.gp68knq.com
+  port: 20201
+  uuid: 962bffc1-16bb-4232-ae66-d366d3ea8927
+  tls: true
+  client-fingerprint: chrome
+  servername: img14.360buyimg.com
+  network: tcp
+  reality-opts:
+    public-key: GwBhOiy3pLa73zga-wmG07xRfiI71_A9VDi-DiHeBWk
+    short-id: '9153'
+  tfo: false
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  udp: true
+- name: 🌐 未知 04 @SCHPD_SUB
+  type: vless
+  server: xiaoniu.niucdn.click
+  port: 20301
+  uuid: 962bffc1-16bb-4232-ae66-d366d3ea8927
+  tls: true
+  client-fingerprint: chrome
+  servername: img14.360buyimg.com
+  network: tcp
+  reality-opts:
+    public-key: GwBhOiy3pLa73zga-wmG07xRfiI71_A9VDi-DiHeBWk
+    short-id: '9153'
+  tfo: false
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  udp: true
+- name: 🇯🇵 日本 06 @SCHPD_SUB
+  type: vless
+  server: 301.gp68knq.com
+  port: 20301
+  uuid: 962bffc1-16bb-4232-ae66-d366d3ea8927
+  tls: true
+  client-fingerprint: chrome
+  servername: img14.360buyimg.com
+  network: tcp
+  reality-opts:
+    public-key: GwBhOiy3pLa73zga-wmG07xRfiI71_A9VDi-DiHeBWk
+    short-id: '9153'
+  tfo: false
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  udp: true
+- name: 🌐 未知 05 @SCHPD_SUB
+  type: vless
+  server: xiaoniu.niucdn.click
+  port: 20401
+  uuid: 962bffc1-16bb-4232-ae66-d366d3ea8927
+  tls: true
+  client-fingerprint: chrome
+  servername: img14.360buyimg.com
+  network: tcp
+  reality-opts:
+    public-key: GwBhOiy3pLa73zga-wmG07xRfiI71_A9VDi-DiHeBWk
+    short-id: '9153'
+  tfo: false
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  udp: true
+- name: 🇺🇸 美国 12 @SCHPD_SUB
+  type: vless
+  server: 401.gp68knq.com
+  port: 20401
+  uuid: 962bffc1-16bb-4232-ae66-d366d3ea8927
+  tls: true
+  client-fingerprint: chrome
+  servername: img14.360buyimg.com
+  network: tcp
+  reality-opts:
+    public-key: GwBhOiy3pLa73zga-wmG07xRfiI71_A9VDi-DiHeBWk
+    short-id: '9153'
+  tfo: false
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  udp: true
+- name: 🇩🇪 德国 09 @SCHPD_SUB
+  type: vless
+  server: 501.gp68knq.com
+  port: 20501
+  uuid: 962bffc1-16bb-4232-ae66-d366d3ea8927
+  tls: true
+  client-fingerprint: chrome
+  servername: img14.360buyimg.com
+  network: tcp
+  reality-opts:
+    public-key: GwBhOiy3pLa73zga-wmG07xRfiI71_A9VDi-DiHeBWk
+    short-id: '9153'
+  tfo: false
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  udp: true
+- name: 🌐 未知 06 @SCHPD_SUB
+  type: vless
+  server: xiaoniu.niucdn.click
+  port: 20501
+  uuid: 962bffc1-16bb-4232-ae66-d366d3ea8927
+  tls: true
+  client-fingerprint: chrome
+  servername: img14.360buyimg.com
+  network: tcp
+  reality-opts:
+    public-key: GwBhOiy3pLa73zga-wmG07xRfiI71_A9VDi-DiHeBWk
+    short-id: '9153'
+  tfo: false
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  udp: true
+- name: ☁️ Cloudflare 12 @SCHPD_SUB
+  type: vless
+  server: 601.gp68knq.com
+  port: 20601
+  uuid: 962bffc1-16bb-4232-ae66-d366d3ea8927
+  tls: true
+  client-fingerprint: chrome
+  servername: img14.360buyimg.com
+  network: tcp
+  reality-opts:
+    public-key: GwBhOiy3pLa73zga-wmG07xRfiI71_A9VDi-DiHeBWk
+    short-id: '9153'
+  tfo: false
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  udp: true
+- name: 🌐 未知 07 @SCHPD_SUB
+  type: vless
+  server: xiaoniu.niucdn.click
+  port: 20601
+  uuid: 962bffc1-16bb-4232-ae66-d366d3ea8927
+  tls: true
+  client-fingerprint: chrome
+  servername: img14.360buyimg.com
+  network: tcp
+  reality-opts:
+    public-key: GwBhOiy3pLa73zga-wmG07xRfiI71_A9VDi-DiHeBWk
+    short-id: '9153'
+  tfo: false
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  udp: true
+- name: 🇬🇧 英国 04 @SCHPD_SUB
+  type: vless
+  server: 701.gp68knq.com
+  port: 20701
+  uuid: 962bffc1-16bb-4232-ae66-d366d3ea8927
+  tls: true
+  client-fingerprint: chrome
+  servername: img14.360buyimg.com
+  network: tcp
+  reality-opts:
+    public-key: GwBhOiy3pLa73zga-wmG07xRfiI71_A9VDi-DiHeBWk
+    short-id: '9153'
+  tfo: false
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  udp: true
+- name: 🌐 未知 08 @SCHPD_SUB
+  type: vless
+  server: xiaoniu.niucdn.click
+  port: 20701
+  uuid: 962bffc1-16bb-4232-ae66-d366d3ea8927
+  tls: true
+  client-fingerprint: chrome
+  servername: img14.360buyimg.com
+  network: tcp
+  reality-opts:
+    public-key: GwBhOiy3pLa73zga-wmG07xRfiI71_A9VDi-DiHeBWk
+    short-id: '9153'
+  tfo: false
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  udp: true
