@@ -28,25 +28,24 @@ proxy-groups:
   - 其他地区 03 @SCHPD_SUB
   - 其他地区 04 @SCHPD_SUB
   - 其他地区 05 @SCHPD_SUB
-  - 其他地区 06 @SCHPD_SUB
-  - 其他地区 07 @SCHPD_SUB
-  - 其他地区 08 @SCHPD_SUB
-  - 其他地区 09 @SCHPD_SUB
-  - 其他地区 10 @SCHPD_SUB
-  - 其他地区 11 @SCHPD_SUB
-  - 其他地区 12 @SCHPD_SUB
-  - 其他地区 13 @SCHPD_SUB
-  - 其他地区 14 @SCHPD_SUB
-  - 其他地区 15 @SCHPD_SUB
-  - 其他地区 16 @SCHPD_SUB
-  - 其他地区 17 @SCHPD_SUB
-  - 其他地区 18 @SCHPD_SUB
   - 台湾 01 @SCHPD_SUB
   - 台湾 02 @SCHPD_SUB
   - 台湾 03 @SCHPD_SUB
   - 台湾 04 @SCHPD_SUB
   - 台湾 05 @SCHPD_SUB
+  - 台湾 06 @SCHPD_SUB
   - 德国 01 @SCHPD_SUB
+  - 日本 01 @SCHPD_SUB
+  - 日本 02 @SCHPD_SUB
+  - 日本 03 @SCHPD_SUB
+  - 日本 04 @SCHPD_SUB
+  - 日本 05 @SCHPD_SUB
+  - 日本 06 @SCHPD_SUB
+  - 日本 07 @SCHPD_SUB
+  - 日本 08 @SCHPD_SUB
+  - 日本 09 @SCHPD_SUB
+  - 日本 10 @SCHPD_SUB
+  - 日本 11 @SCHPD_SUB
   - 法国 01 @SCHPD_SUB
   - 法国 02 @SCHPD_SUB
   - 法国 03 @SCHPD_SUB
@@ -55,6 +54,14 @@ proxy-groups:
   - 法国 06 @SCHPD_SUB
   - 美国 01 @SCHPD_SUB
   - 美国 02 @SCHPD_SUB
+  - 香港 01 @SCHPD_SUB
+  - 香港 02 @SCHPD_SUB
+  - 香港 03 @SCHPD_SUB
+  - 香港 04 @SCHPD_SUB
+  - 香港 05 @SCHPD_SUB
+  - 香港 06 @SCHPD_SUB
+  - 香港 07 @SCHPD_SUB
+  - 香港 08 @SCHPD_SUB
 - name: 自动选择
   type: url-test
   url: http://connectivitycheck.gstatic.com/generate_204
@@ -70,107 +77,7 @@ proxy-groups:
 rules:
 - MATCH,Proxy
 proxies:
-- name: 法国 01 @SCHPD_SUB
-  server: 2001:bc8:32d7:302::11
-  port: 44579
-  type: vmess
-  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
-  ws-headers:
-    Host: Azerb.NET
-  udp: true
-- name: 美国 01 @SCHPD_SUB
-  server: 167.68.4.199
-  port: 2053
-  type: trojan
-  password: Aimer
-  skip-cert-verify: true
-  udp: true
-- name: 法国 02 @SCHPD_SUB
-  server: 2001:bc8:32d7:302::10
-  port: 44579
-  type: vmess
-  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
-  ws-headers:
-    Host: 2001:bc8:32d7:302::10
-  udp: true
 - name: 中国 01 @SCHPD_SUB
-  server: v12.hdacd.com
-  port: 30812
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 其他地区 01 @SCHPD_SUB
-  server: cdvf59.0z0.ccwu.cc
-  port: 80
-  type: vmess
-  uuid: 8ea1b89f-21d5-49b9-9bcd-1ad9ac39b4ba
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-path: /y3ME81hpTJWwd4RJBAQ5Ah
-  ws-headers:
-    Host: cdvf59.0z0.ccwu.cc
-  udp: true
-- name: 台湾 01 @SCHPD_SUB
-  server: green2.cdntencentmusic.com
-  port: 31101
-  type: trojan
-  password: 6f038cee-6ba1-4941-bce5-de1969f37405
-  sni: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  udp: true
-- name: 中国 02 @SCHPD_SUB
-  server: v8.hdacd.com
-  port: 30808
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 其他地区 02 @SCHPD_SUB
-  server: dcvgt6.0z0.ccwu.cc
-  port: 443
-  type: trojan
-  password: 8ea1b89f-21d5-49b9-9bcd-1ad9ac39b4ba
-  sni: dcvgt6.0z0.ccwu.cc
-  skip-cert-verify: true
-  udp: true
-- name: 台湾 02 @SCHPD_SUB
-  server: green2.cdntencentmusic.com
-  port: 35501
-  type: trojan
-  password: 0a169d7d-a30f-4d90-af1b-55f6ef6afcb7
-  sni: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  udp: true
-- name: 台湾 03 @SCHPD_SUB
-  server: 220.130.58.136
-  port: 35501
-  type: trojan
-  password: 47d9af53-24a8-4593-a439-a73b88ad53ae
-  skip-cert-verify: true
-  udp: true
-- name: 中国 03 @SCHPD_SUB
   server: v30.hdacd.com
   port: 30830
   type: vmess
@@ -178,14 +85,6 @@ proxies:
   alterId: 0
   cipher: auto
   tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 其他地区 03 @SCHPD_SUB
-  server: ddffghy.0wu.ccwu.cc
-  port: 443
-  type: trojan
-  password: 8ea1b89f-21d5-49b9-9bcd-1ad9ac39b4ba
-  sni: ddffghy.0wu.ccwu.cc
   skip-cert-verify: true
   udp: true
 - name: 德国 01 @SCHPD_SUB
@@ -197,6 +96,27 @@ proxies:
   cipher: auto
   tls: false
   skip-cert-verify: true
+  udp: true
+- name: 美国 01 @SCHPD_SUB
+  server: 167.68.4.199
+  port: 2053
+  type: trojan
+  password: Aimer
+  skip-cert-verify: true
+  udp: true
+- name: 其他地区 01 @SCHPD_SUB
+  server: turk1.net.net
+  port: 80
+  type: vmess
+  uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-path: /
+  ws-headers:
+    Host: tr1-smart.adelping.com.
   udp: true
 - name: 美国 02 @SCHPD_SUB
   server: vc.fly.dev
@@ -212,7 +132,30 @@ proxies:
   ws-headers:
     Host: vc.fly.dev
   udp: true
-- name: 中国 04 @SCHPD_SUB
+- name: 台湾 01 @SCHPD_SUB
+  server: green2.cdntencentmusic.com
+  port: 31101
+  type: trojan
+  password: 0a169d7d-a30f-4d90-af1b-55f6ef6afcb7
+  sni: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  udp: true
+- name: 台湾 02 @SCHPD_SUB
+  server: green2.cdntencentmusic.com
+  port: 35501
+  type: trojan
+  password: 04e5b584-1850-483d-a844-9ad624a4ca8e
+  sni: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  udp: true
+- name: 台湾 03 @SCHPD_SUB
+  server: 220.130.58.136
+  port: 31101
+  type: trojan
+  password: 11cfbea5-eae4-4654-8aa9-a9481f38dc42
+  skip-cert-verify: true
+  udp: true
+- name: 中国 02 @SCHPD_SUB
   server: v29.hdacd.com
   port: 30829
   type: vmess
@@ -224,28 +167,24 @@ proxies:
   udp: true
 - name: 台湾 04 @SCHPD_SUB
   server: 220.130.58.136
-  port: 31101
+  port: 35501
   type: trojan
-  password: 11cfbea5-eae4-4654-8aa9-a9481f38dc42
+  password: f976ac58-b52a-4a54-9c8e-3d49fd365232
   skip-cert-verify: true
   udp: true
-- name: 其他地区 04 @SCHPD_SUB
-  server: vbnj8.0yo.ccwu.cc
-  port: 443
+- name: 中国 03 @SCHPD_SUB
+  server: v12.hdacd.com
+  port: 30812
   type: vmess
-  uuid: 8ea1b89f-21d5-49b9-9bcd-1ad9ac39b4ba
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 0
   cipher: auto
-  tls: true
+  tls: false
   skip-cert-verify: true
-  network: ws
-  ws-path: /y3ME81hpTJWwd4RJBAQ5Ah
-  ws-headers:
-    Host: vbnj8.0yo.ccwu.cc
   udp: true
-- name: 中国 05 @SCHPD_SUB
-  server: v9.hdacd.com
-  port: 30809
+- name: 中国 04 @SCHPD_SUB
+  server: v33.hdacd.com
+  port: 30833
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
@@ -253,63 +192,14 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 其他地区 05 @SCHPD_SUB
-  server: turk1.net.net
-  port: 80
-  type: vmess
-  uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
-  alterId: 0
-  cipher: auto
-  tls: false
+- name: 台湾 05 @SCHPD_SUB
+  server: 220.130.58.136
+  port: 35502
+  type: trojan
+  password: 6f038cee-6ba1-4941-bce5-de1969f37405
   skip-cert-verify: true
-  network: ws
-  ws-path: /
-  ws-headers:
-    Host: tr1-smart.adelping.com.
   udp: true
-- name: 其他地区 06 @SCHPD_SUB
-  server: dcvgtyu.0ww.ccwu.cc
-  port: 80
-  type: vmess
-  uuid: 8ea1b89f-21d5-49b9-9bcd-1ad9ac39b4ba
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-path: /y3ME81hpTJWwd4RJBAQ5Ah
-  ws-headers:
-    Host: dcvgtyu.0ww.ccwu.cc
-  udp: true
-- name: 其他地区 07 @SCHPD_SUB
-  server: dcvgt6.0z0.ccwu.cc
-  port: 80
-  type: vmess
-  uuid: 8ea1b89f-21d5-49b9-9bcd-1ad9ac39b4ba
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-path: /y3ME81hpTJWwd4RJBAQ5Ah
-  ws-headers:
-    Host: dcvgt6.0z0.ccwu.cc
-  udp: true
-- name: 其他地区 08 @SCHPD_SUB
-  server: gbnjk9.0ww.ccwu.cc
-  port: 80
-  type: vmess
-  uuid: 8ea1b89f-21d5-49b9-9bcd-1ad9ac39b4ba
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-path: /y3ME81hpTJWwd4RJBAQ5Ah
-  ws-headers:
-    Host: gbnjk9.0ww.ccwu.cc
-  udp: true
-- name: 其他地区 09 @SCHPD_SUB
+- name: 其他地区 02 @SCHPD_SUB
   server: fffgnju.1gg.ccwu.cc
   port: 80
   type: vmess
@@ -323,19 +213,63 @@ proxies:
   ws-headers:
     Host: fffgnju.1gg.ccwu.cc
   udp: true
-- name: 其他地区 10 @SCHPD_SUB
-  server: vbnj8.0yo.ccwu.cc
-  port: 80
+- name: 中国 05 @SCHPD_SUB
+  server: v8.hdacd.com
+  port: 30808
   type: vmess
-  uuid: 8ea1b89f-21d5-49b9-9bcd-1ad9ac39b4ba
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 中国 06 @SCHPD_SUB
+  server: v9.hdacd.com
+  port: 30809
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 中国 07 @SCHPD_SUB
+  server: v36.hdacd.com
+  port: 30836
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 法国 01 @SCHPD_SUB
+  server: 2001:bc8:32d7:302::10
+  port: 44579
+  type: vmess
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
   network: ws
-  ws-path: /y3ME81hpTJWwd4RJBAQ5Ah
+  ws-path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
   ws-headers:
-    Host: vbnj8.0yo.ccwu.cc
+    Host: 2001:bc8:32d7:302::10
+  udp: true
+- name: 法国 02 @SCHPD_SUB
+  server: 2001:bc8:32d7:302::11
+  port: 44579
+  type: vmess
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
+  ws-headers:
+    Host: TABRIZ.NET
   udp: true
 - name: 法国 03 @SCHPD_SUB
   server: 2001:bc8:32d7:302::16
@@ -351,69 +285,8 @@ proxies:
   ws-headers:
     Host: AZERB.NET
   udp: true
-- name: 中国 06 @SCHPD_SUB
-  server: v33.hdacd.com
-  port: 30833
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 其他地区 11 @SCHPD_SUB
-  server: cvg67.0yo.ccwu.cc
-  port: 443
-  type: trojan
-  password: 8ea1b89f-21d5-49b9-9bcd-1ad9ac39b4ba
-  sni: cvg67.0yo.ccwu.cc
-  skip-cert-verify: true
-  udp: true
-- name: 台湾 05 @SCHPD_SUB
-  server: 220.130.58.136
-  port: 35502
-  type: trojan
-  password: c5355528-55a2-45df-b8fd-a48ce3c41413
-  skip-cert-verify: true
-  udp: true
-- name: 其他地区 12 @SCHPD_SUB
-  server: fbnji.1sb.ccwu.cc
-  port: 443
-  type: trojan
-  password: 8ea1b89f-21d5-49b9-9bcd-1ad9ac39b4ba
-  sni: fbnji.1sb.ccwu.cc
-  skip-cert-verify: true
-  udp: true
-- name: 其他地区 13 @SCHPD_SUB
-  server: gnmki.0yo.ccwu.cc
-  port: 80
-  type: vmess
-  uuid: 8ea1b89f-21d5-49b9-9bcd-1ad9ac39b4ba
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-path: /y3ME81hpTJWwd4RJBAQ5Ah
-  ws-headers:
-    Host: gnmki.0yo.ccwu.cc
-  udp: true
-- name: 其他地区 14 @SCHPD_SUB
-  server: fbnhu.0wu.ccwu.cc
-  port: 80
-  type: vmess
-  uuid: 8ea1b89f-21d5-49b9-9bcd-1ad9ac39b4ba
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-path: /y3ME81hpTJWwd4RJBAQ5Ah
-  ws-headers:
-    Host: fbnhu.0wu.ccwu.cc
-  udp: true
 - name: 法国 04 @SCHPD_SUB
-  server: 2001:bc8:32d7:302::15
+  server: 2001:bc8:32d7:302::17
   port: 44579
   type: vmess
   uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
@@ -424,21 +297,7 @@ proxies:
   network: ws
   ws-path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
   ws-headers:
-    Host: TURK.NET
-  udp: true
-- name: 其他地区 15 @SCHPD_SUB
-  server: rfghnj.0gg.ccwu.cc
-  port: 80
-  type: vmess
-  uuid: 8ea1b89f-21d5-49b9-9bcd-1ad9ac39b4ba
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-path: /y3ME81hpTJWwd4RJBAQ5Ah
-  ws-headers:
-    Host: rfghnj.0gg.ccwu.cc
+    Host: AZERB.NET
   udp: true
 - name: 法国 05 @SCHPD_SUB
   server: 2001:bc8:32d7:302::14
@@ -454,48 +313,8 @@ proxies:
   ws-headers:
     Host: TABRIZ.NET
   udp: true
-- name: 其他地区 16 @SCHPD_SUB
-  server: gbnjk9.0ww.ccwu.cc
-  port: 443
-  type: vmess
-  uuid: 8ea1b89f-21d5-49b9-9bcd-1ad9ac39b4ba
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-path: /y3ME81hpTJWwd4RJBAQ5Ah
-  ws-headers:
-    Host: gbnjk9.0ww.ccwu.cc
-  udp: true
-- name: 中国 07 @SCHPD_SUB
-  server: v36.hdacd.com
-  port: 30836
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 其他地区 17 @SCHPD_SUB
-  server: scvf65.0z0.ccwu.cc
-  port: 443
-  type: trojan
-  password: 8ea1b89f-21d5-49b9-9bcd-1ad9ac39b4ba
-  sni: scvf65.0z0.ccwu.cc
-  skip-cert-verify: true
-  udp: true
-- name: 其他地区 18 @SCHPD_SUB
-  server: dcvwsde.1gg.ccwu.cc
-  port: 443
-  type: trojan
-  password: 8ea1b89f-21d5-49b9-9bcd-1ad9ac39b4ba
-  sni: dcvwsde.1gg.ccwu.cc
-  skip-cert-verify: true
-  udp: true
 - name: 法国 06 @SCHPD_SUB
-  server: 2001:bc8:32d7:302::17
+  server: 2001:bc8:32d7:302::15
   port: 44579
   type: vmess
   uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
@@ -506,5 +325,213 @@ proxies:
   network: ws
   ws-path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
   ws-headers:
-    Host: AZERB.NET
+    Host: TURK.NET
+  udp: true
+- name: 其他地区 03 @SCHPD_SUB
+  server: nji.kk0.ccwu.cc
+  port: 443
+  type: vmess
+  uuid: 2215657e-2af4-405f-b770-4e61b298d5b8
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-path: /PGsqb2SHJfbCLo
+  ws-headers:
+    Host: nji.kk0.ccwu.cc
+  udp: true
+- name: 其他地区 04 @SCHPD_SUB
+  server: ffbghn.2xv.ccwu.cc
+  port: 80
+  type: vmess
+  uuid: 9b354a64-81f6-4a15-a127-337cd17e25ba
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-path: /7t9M6fIZbmR7zklVEUuTu7GKK
+  ws-headers:
+    Host: ffbghn.2xv.ccwu.cc
+  udp: true
+- name: 其他地区 05 @SCHPD_SUB
+  server: nmklo.kk0.ccwu.cc
+  port: 443
+  type: vmess
+  uuid: 2215657e-2af4-405f-b770-4e61b298d5b8
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-path: /PGsqb2SHJfbCLo
+  ws-headers:
+    Host: nmklo.kk0.ccwu.cc
+  udp: true
+- name: 台湾 06 @SCHPD_SUB
+  server: green2.cdntencentmusic.com
+  port: 31103
+  type: trojan
+  password: 4250b3bb-d1ae-4e77-bf71-4069e0d2c383
+  sni: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  udp: true
+- name: 香港 01 @SCHPD_SUB
+  server: n1761296897.lie5d.cyou
+  port: 443
+  type: vmess
+  uuid: 5ecc3086-93cf-42e3-956b-f2180e042537
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-path: /
+  ws-headers:
+    Host: n1761296897.lie5d.cyou
+  udp: true
+- name: 香港 02 @SCHPD_SUB
+  server: v10.hdacd.com
+  port: 30807
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: 日本 01 @SCHPD_SUB
+  server: 13.231.56.214
+  port: 331
+  type: trojan
+  password: 262f1d150049457ac1d6e66b020fa980
+  sni: www.nintendogames.net
+  skip-cert-verify: false
+  udp: true
+- name: 日本 02 @SCHPD_SUB
+  server: 52.199.90.129
+  port: 1359
+  type: trojan
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+  udp: true
+- name: 香港 03 @SCHPD_SUB
+  server: 18.162.142.234
+  port: 504
+  type: trojan
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+  udp: true
+- name: 日本 03 @SCHPD_SUB
+  server: 52.199.90.129
+  port: 32536
+  type: trojan
+  password: BxceQaOe
+  sni: t.me%252Fripaojiedian
+  skip-cert-verify: true
+  udp: true
+- name: 日本 04 @SCHPD_SUB
+  server: 57.180.8.230
+  port: 34818
+  type: trojan
+  password: 262f1d150049457ac1d6e66b020fa980
+  sni: www.nintendogames.net
+  skip-cert-verify: false
+  udp: true
+- name: 日本 05 @SCHPD_SUB
+  server: 160.16.70.180
+  port: 2001
+  type: trojan
+  password: 262f1d150049457ac1d6e66b020fa980
+  sni: www.nintendogames.net
+  skip-cert-verify: false
+  udp: true
+- name: 日本 06 @SCHPD_SUB
+  server: 52.199.130.72
+  port: 3419
+  type: trojan
+  password: 262f1d150049457ac1d6e66b020fa980
+  sni: www.nintendogames.net
+  skip-cert-verify: false
+  udp: true
+- name: 日本 07 @SCHPD_SUB
+  server: 52.69.221.238
+  port: 3901
+  type: trojan
+  password: 262f1d150049457ac1d6e66b020fa980
+  sni: www.nintendogames.net
+  skip-cert-verify: false
+  udp: true
+- name: 香港 04 @SCHPD_SUB
+  server: 16.162.105.4
+  port: 41973
+  type: trojan
+  password: BxceQaOe
+  sni: t.me%252Fripaojiedian
+  skip-cert-verify: true
+  udp: true
+- name: 日本 08 @SCHPD_SUB
+  server: 175.41.195.26
+  port: 4920
+  type: trojan
+  password: 262f1d150049457ac1d6e66b020fa980
+  sni: www.nintendogames.net
+  skip-cert-verify: false
+  udp: true
+- name: 日本 09 @SCHPD_SUB
+  server: 52.195.233.42
+  port: 1281
+  type: trojan
+  password: 262f1d150049457ac1d6e66b020fa980
+  sni: www.nintendogames.net
+  skip-cert-verify: false
+  udp: true
+- name: 香港 05 @SCHPD_SUB
+  server: 18.162.142.234
+  port: 45947
+  type: trojan
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+  udp: true
+- name: 香港 06 @SCHPD_SUB
+  server: board-02.ddnskunlun.com
+  port: 11985
+  type: vmess
+  uuid: a8bcce43-abda-315b-8e81-e3e65bcb3d07
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: 日本 10 @SCHPD_SUB
+  server: 160.16.72.33
+  port: 4920
+  type: trojan
+  password: 262f1d150049457ac1d6e66b020fa980
+  sni: www.nintendogames.net
+  skip-cert-verify: false
+  udp: true
+- name: 日本 11 @SCHPD_SUB
+  server: 202.181.103.246
+  port: 3419
+  type: trojan
+  password: 262f1d150049457ac1d6e66b020fa980
+  sni: www.nintendogames.net
+  skip-cert-verify: false
+  udp: true
+- name: 香港 07 @SCHPD_SUB
+  server: bgp1.stimaysmhy8.com
+  port: 14011
+  type: trojan
+  password: 984c7793-1447-4af5-9200-d514ad6fe329
+  udp: true
+- name: 香港 08 @SCHPD_SUB
+  server: sg05.stimaysmhy8.com
+  port: 45005
+  type: trojan
+  password: 984c7793-1447-4af5-9200-d514ad6fe329
   udp: true
