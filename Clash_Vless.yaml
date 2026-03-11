@@ -19,22 +19,17 @@ proxy-groups:
   - 中国 01 @SCHPD_SUB
   - 中国 02 @SCHPD_SUB
   - 中国 03 @SCHPD_SUB
-  - 中国 04 @SCHPD_SUB
-  - 中国 05 @SCHPD_SUB
-  - 中国 06 @SCHPD_SUB
-  - 中国 07 @SCHPD_SUB
   - 其他地区 01 @SCHPD_SUB
   - 其他地区 02 @SCHPD_SUB
   - 其他地区 03 @SCHPD_SUB
   - 其他地区 04 @SCHPD_SUB
   - 其他地区 05 @SCHPD_SUB
-  - 台湾 01 @SCHPD_SUB
-  - 台湾 02 @SCHPD_SUB
-  - 台湾 03 @SCHPD_SUB
-  - 台湾 04 @SCHPD_SUB
-  - 台湾 05 @SCHPD_SUB
-  - 台湾 06 @SCHPD_SUB
+  - 奥地利 01 @SCHPD_SUB
   - 德国 01 @SCHPD_SUB
+  - 德国 02 @SCHPD_SUB
+  - 德国 03 @SCHPD_SUB
+  - 德国 04 @SCHPD_SUB
+  - 新加坡 01 @SCHPD_SUB
   - 日本 01 @SCHPD_SUB
   - 日本 02 @SCHPD_SUB
   - 日本 03 @SCHPD_SUB
@@ -44,24 +39,40 @@ proxy-groups:
   - 日本 07 @SCHPD_SUB
   - 日本 08 @SCHPD_SUB
   - 日本 09 @SCHPD_SUB
-  - 日本 10 @SCHPD_SUB
-  - 日本 11 @SCHPD_SUB
   - 法国 01 @SCHPD_SUB
   - 法国 02 @SCHPD_SUB
   - 法国 03 @SCHPD_SUB
   - 法国 04 @SCHPD_SUB
   - 法国 05 @SCHPD_SUB
   - 法国 06 @SCHPD_SUB
+  - 法国 07 @SCHPD_SUB
+  - 法国 08 @SCHPD_SUB
+  - 波兰 01 @SCHPD_SUB
+  - 爱沙尼亚 01 @SCHPD_SUB
   - 美国 01 @SCHPD_SUB
   - 美国 02 @SCHPD_SUB
+  - 美国 03 @SCHPD_SUB
+  - 美国 04 @SCHPD_SUB
+  - 美国 05 @SCHPD_SUB
+  - 芬兰 01 @SCHPD_SUB
+  - 荷兰 01 @SCHPD_SUB
+  - 荷兰 02 @SCHPD_SUB
+  - 荷兰 03 @SCHPD_SUB
+  - 西班牙 01 @SCHPD_SUB
+  - 阿联酋 01 @SCHPD_SUB
+  - 韩国 01 @SCHPD_SUB
+  - 韩国 02 @SCHPD_SUB
+  - 韩国 03 @SCHPD_SUB
+  - 韩国 04 @SCHPD_SUB
+  - 韩国 05 @SCHPD_SUB
+  - 韩国 06 @SCHPD_SUB
+  - 韩国 07 @SCHPD_SUB
+  - 韩国 08 @SCHPD_SUB
   - 香港 01 @SCHPD_SUB
   - 香港 02 @SCHPD_SUB
   - 香港 03 @SCHPD_SUB
   - 香港 04 @SCHPD_SUB
   - 香港 05 @SCHPD_SUB
-  - 香港 06 @SCHPD_SUB
-  - 香港 07 @SCHPD_SUB
-  - 香港 08 @SCHPD_SUB
 - name: 自动选择
   type: url-test
   url: http://connectivitycheck.gstatic.com/generate_204
@@ -77,102 +88,231 @@ proxy-groups:
 rules:
 - MATCH,Proxy
 proxies:
-- name: 中国 01 @SCHPD_SUB
-  server: v30.hdacd.com
-  port: 30830
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
 - name: 德国 01 @SCHPD_SUB
+  type: vmess
   server: 82.198.246.97
   port: 180
-  type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
   tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 美国 01 @SCHPD_SUB
-  server: 167.68.4.199
-  port: 2053
-  type: trojan
-  password: Aimer
-  skip-cert-verify: true
+  skip-cert-verify: false
   udp: true
 - name: 其他地区 01 @SCHPD_SUB
-  server: turk1.net.net
-  port: 80
+  type: trojan
+  server: 172.66.44.230
+  port: 8443
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    path: /tro8sFW1S91B6sZrM1?ed=2560
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+- name: 法国 01 @SCHPD_SUB
   type: vmess
-  uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
+  server: 2001:bc8:32d7:302::17
+  port: 44579
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
   alterId: 0
   cipher: auto
   tls: false
-  skip-cert-verify: true
+  skip-cert-verify: false
   network: ws
-  ws-path: /
-  ws-headers:
-    Host: tr1-smart.adelping.com.
+  ws-opts:
+    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+    headers:
+      Host: AZERB.NET
   udp: true
-- name: 美国 02 @SCHPD_SUB
-  server: vc.fly.dev
-  port: 443
+- name: 法国 02 @SCHPD_SUB
   type: vmess
-  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
-  alterId: 32
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-path: /vc
-  ws-headers:
-    Host: vc.fly.dev
-  udp: true
-- name: 台湾 01 @SCHPD_SUB
-  server: green2.cdntencentmusic.com
-  port: 31101
-  type: trojan
-  password: 0a169d7d-a30f-4d90-af1b-55f6ef6afcb7
-  sni: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  udp: true
-- name: 台湾 02 @SCHPD_SUB
-  server: green2.cdntencentmusic.com
-  port: 35501
-  type: trojan
-  password: 04e5b584-1850-483d-a844-9ad624a4ca8e
-  sni: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  udp: true
-- name: 台湾 03 @SCHPD_SUB
-  server: 220.130.58.136
-  port: 31101
-  type: trojan
-  password: 11cfbea5-eae4-4654-8aa9-a9481f38dc42
-  skip-cert-verify: true
-  udp: true
-- name: 中国 02 @SCHPD_SUB
-  server: v29.hdacd.com
-  port: 30829
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
+  server: 2001:bc8:32d7:302::11
+  port: 44579
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  alterId: 0
   cipher: auto
   tls: false
-  skip-cert-verify: true
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
+    headers:
+      Host: Azerb.NET
   udp: true
-- name: 台湾 04 @SCHPD_SUB
-  server: 220.130.58.136
-  port: 35501
-  type: trojan
-  password: f976ac58-b52a-4a54-9c8e-3d49fd365232
-  skip-cert-verify: true
+- name: 法国 03 @SCHPD_SUB
+  type: vmess
+  server: 2001:bc8:32d7:302::10
+  port: 44579
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
+    headers:
+      Host: TABRIZ.NET
   udp: true
-- name: 中国 03 @SCHPD_SUB
+- name: 法国 04 @SCHPD_SUB
+  type: vmess
+  server: 2001:bc8:32d7:302::16
+  port: 44579
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+    headers:
+      Host: AZERB.NET
+  udp: true
+- name: 法国 05 @SCHPD_SUB
+  type: vmess
+  server: 2001:bc8:32d7:302::14
+  port: 44579
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
+    headers:
+      Host: TABRIZ.NET
+  udp: true
+- name: 法国 06 @SCHPD_SUB
+  type: vmess
+  server: 2001:bc8:32d7:302::15
+  port: 44579
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+    headers:
+      Host: TURK.NET
+  udp: true
+- name: 美国 01 @SCHPD_SUB
+  type: vless
+  server: 198.62.62.248
+  port: 443
+  uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+  network: ws
+  servername: tar.alabama-tigr.info
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /love
+    headers:
+      Host: tar.alabama-tigr.info
+  udp: true
+- name: 其他地区 02 @SCHPD_SUB
+  type: vless
+  server: 104.18.32.47
+  port: 2052
+  uuid: 5e62ddcf-78c9-4b15-803a-436c8c839ddc
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: oBEDiENt-noiseqJf5ja18yF.wIndLer.CO.UK.
+  udp: true
+- name: 美国 02 @SCHPD_SUB
+  type: vless
+  server: 198.62.62.235
+  port: 443
+  uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+  network: ws
+  servername: bank.alaska-tigr.info
+  tls: true
+  ws-opts:
+    path: /love
+    headers:
+      Host: bank.alaska-tigr.info
+  udp: true
+- name: 美国 03 @SCHPD_SUB
+  type: anytls
+  server: us1.anliangjifei.top
+  port: 12053
+  password: ae74dd32-c336-4be4-9c15-f6108292b3e5
+  sni: us1.anliangjifei.top
+  skip-cert-verify: true
+  tls: true
+  udp: false
+- name: 香港 01 @SCHPD_SUB
+  type: vmess
+  server: 103.181.164.237
+  port: 34114
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: 美国 04 @SCHPD_SUB
+  type: vmess
+  server: 198.62.62.199
+  port: 443
+  uuid: f08369d1-5ee7-4b16-d786-30bce12fc33c
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /f08369d1-5ee7-4b16-d786-30bce12fc33c
+    headers:
+      Host: ous3.dean52.top
+  udp: true
+- name: 芬兰 01 @SCHPD_SUB
+  type: vless
+  server: 78.153.139.68
+  port: 8443
+  uuid: fd8972d7-cf5e-11f0-9970-45e1d80c4039
+  servername: images.apple.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: random
+  reality-opts:
+    public-key: pekfYPV5U8EjfQ4_zS5c6I2NnOZ2jUlyMGAWa4FWPF4
+    short-id: 58c512b4422e2517
+  udp: true
+- name: 其他地区 03 @SCHPD_SUB
+  type: vless
+  server: 104.21.31.4
+  port: 8880
+  uuid: 0a5ab719-2407-4398-b507-8437ef365023
+  network: ws
+  tls: false
+  ws-opts:
+    path: /FCHANNEL---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY
+    headers:
+      Host: underthegun.cfd.
+  udp: true
+- name: 美国 05 @SCHPD_SUB
+  type: vless
+  server: lord.kokopit.info
+  port: 2096
+  uuid: 337bf72e-bb79-4d5f-be3f-7822eb77100c
+  network: ws
+  servername: YdHxR987jY.bAsErTy.InFo
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: YdHxR987jY.bAsErTy.InFo
+  udp: true
+- name: 中国 01 @SCHPD_SUB
   server: v12.hdacd.com
   port: 30812
   type: vmess
@@ -182,38 +322,14 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 中国 04 @SCHPD_SUB
-  server: v33.hdacd.com
-  port: 30833
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 台湾 05 @SCHPD_SUB
-  server: 220.130.58.136
-  port: 35502
+- name: 奥地利 01 @SCHPD_SUB
+  server: 152.53.200.167
+  port: 8444
   type: trojan
-  password: 6f038cee-6ba1-4941-bce5-de1969f37405
+  password: trojan
   skip-cert-verify: true
   udp: true
-- name: 其他地区 02 @SCHPD_SUB
-  server: fffgnju.1gg.ccwu.cc
-  port: 80
-  type: vmess
-  uuid: 8ea1b89f-21d5-49b9-9bcd-1ad9ac39b4ba
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-path: /y3ME81hpTJWwd4RJBAQ5Ah
-  ws-headers:
-    Host: fffgnju.1gg.ccwu.cc
-  udp: true
-- name: 中国 05 @SCHPD_SUB
+- name: 中国 02 @SCHPD_SUB
   server: v8.hdacd.com
   port: 30808
   type: vmess
@@ -223,9 +339,9 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 中国 06 @SCHPD_SUB
-  server: v9.hdacd.com
-  port: 30809
+- name: 中国 03 @SCHPD_SUB
+  server: v29.hdacd.com
+  port: 30829
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
@@ -233,163 +349,15 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 中国 07 @SCHPD_SUB
-  server: v36.hdacd.com
-  port: 30836
+- name: 荷兰 01 @SCHPD_SUB
+  server: 141.11.21.219
+  port: 50521
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 法国 01 @SCHPD_SUB
-  server: 2001:bc8:32d7:302::10
-  port: 44579
-  type: vmess
-  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-  ws-headers:
-    Host: 2001:bc8:32d7:302::10
-  udp: true
-- name: 法国 02 @SCHPD_SUB
-  server: 2001:bc8:32d7:302::11
-  port: 44579
-  type: vmess
-  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
-  ws-headers:
-    Host: TABRIZ.NET
-  udp: true
-- name: 法国 03 @SCHPD_SUB
-  server: 2001:bc8:32d7:302::16
-  port: 44579
-  type: vmess
-  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-  ws-headers:
-    Host: AZERB.NET
-  udp: true
-- name: 法国 04 @SCHPD_SUB
-  server: 2001:bc8:32d7:302::17
-  port: 44579
-  type: vmess
-  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-  ws-headers:
-    Host: AZERB.NET
-  udp: true
-- name: 法国 05 @SCHPD_SUB
-  server: 2001:bc8:32d7:302::14
-  port: 44579
-  type: vmess
-  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
-  ws-headers:
-    Host: TABRIZ.NET
-  udp: true
-- name: 法国 06 @SCHPD_SUB
-  server: 2001:bc8:32d7:302::15
-  port: 44579
-  type: vmess
-  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-  ws-headers:
-    Host: TURK.NET
-  udp: true
-- name: 其他地区 03 @SCHPD_SUB
-  server: nji.kk0.ccwu.cc
-  port: 443
-  type: vmess
-  uuid: 2215657e-2af4-405f-b770-4e61b298d5b8
+  uuid: 7b4c6795-3be5-4a4e-b234-07a46f580c45
   alterId: 0
   cipher: auto
   tls: true
   skip-cert-verify: true
-  network: ws
-  ws-path: /PGsqb2SHJfbCLo
-  ws-headers:
-    Host: nji.kk0.ccwu.cc
-  udp: true
-- name: 其他地区 04 @SCHPD_SUB
-  server: ffbghn.2xv.ccwu.cc
-  port: 80
-  type: vmess
-  uuid: 9b354a64-81f6-4a15-a127-337cd17e25ba
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-path: /7t9M6fIZbmR7zklVEUuTu7GKK
-  ws-headers:
-    Host: ffbghn.2xv.ccwu.cc
-  udp: true
-- name: 其他地区 05 @SCHPD_SUB
-  server: nmklo.kk0.ccwu.cc
-  port: 443
-  type: vmess
-  uuid: 2215657e-2af4-405f-b770-4e61b298d5b8
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-path: /PGsqb2SHJfbCLo
-  ws-headers:
-    Host: nmklo.kk0.ccwu.cc
-  udp: true
-- name: 台湾 06 @SCHPD_SUB
-  server: green2.cdntencentmusic.com
-  port: 31103
-  type: trojan
-  password: 4250b3bb-d1ae-4e77-bf71-4069e0d2c383
-  sni: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  udp: true
-- name: 香港 01 @SCHPD_SUB
-  server: n1761296897.lie5d.cyou
-  port: 443
-  type: vmess
-  uuid: 5ecc3086-93cf-42e3-956b-f2180e042537
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-path: /
-  ws-headers:
-    Host: n1761296897.lie5d.cyou
   udp: true
 - name: 香港 02 @SCHPD_SUB
   server: v10.hdacd.com
@@ -401,137 +369,393 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: 日本 01 @SCHPD_SUB
-  server: 13.231.56.214
-  port: 331
+- name: 香港 03 @SCHPD_SUB
+  server: 58.152.18.2
+  port: 443
   type: trojan
-  password: 262f1d150049457ac1d6e66b020fa980
+  password: f389ed926e512e15f382dc3804029474
   sni: www.nintendogames.net
   skip-cert-verify: false
   udp: true
+- name: 香港 04 @SCHPD_SUB
+  server: 16.163.107.16
+  port: 5823
+  type: trojan
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+  udp: true
+- name: 日本 01 @SCHPD_SUB
+  server: 54.168.85.73
+  port: 5823
+  type: trojan
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+  udp: true
 - name: 日本 02 @SCHPD_SUB
-  server: 52.199.90.129
-  port: 1359
-  type: trojan
-  password: BxceQaOe
-  sni: t.me%2Fripaojiedian
-  skip-cert-verify: true
-  udp: true
-- name: 香港 03 @SCHPD_SUB
-  server: 18.162.142.234
-  port: 504
-  type: trojan
-  password: BxceQaOe
-  sni: t.me%2Fripaojiedian
-  skip-cert-verify: true
-  udp: true
-- name: 日本 03 @SCHPD_SUB
-  server: 52.199.90.129
-  port: 32536
+  server: 13.230.222.150
+  port: 21508
   type: trojan
   password: BxceQaOe
   sni: t.me%252Fripaojiedian
   skip-cert-verify: true
   udp: true
-- name: 日本 04 @SCHPD_SUB
-  server: 57.180.8.230
+- name: 日本 03 @SCHPD_SUB
+  server: 160.16.106.99
   port: 34818
   type: trojan
-  password: 262f1d150049457ac1d6e66b020fa980
+  password: f389ed926e512e15f382dc3804029474
+  sni: www.nintendogames.net
+  skip-cert-verify: false
+  udp: true
+- name: 日本 04 @SCHPD_SUB
+  server: 160.16.106.99
+  port: 4937
+  type: trojan
+  password: f389ed926e512e15f382dc3804029474
   sni: www.nintendogames.net
   skip-cert-verify: false
   udp: true
 - name: 日本 05 @SCHPD_SUB
-  server: 160.16.70.180
-  port: 2001
+  server: 160.16.106.99
+  port: 3419
   type: trojan
-  password: 262f1d150049457ac1d6e66b020fa980
+  password: f7dbed8b1ca85124e793ba6c0bcfd0db
   sni: www.nintendogames.net
   skip-cert-verify: false
   udp: true
 - name: 日本 06 @SCHPD_SUB
-  server: 52.199.130.72
-  port: 3419
+  server: 160.16.106.99
+  port: 4674
   type: trojan
-  password: 262f1d150049457ac1d6e66b020fa980
+  password: f389ed926e512e15f382dc3804029474
   sni: www.nintendogames.net
   skip-cert-verify: false
   udp: true
 - name: 日本 07 @SCHPD_SUB
-  server: 52.69.221.238
-  port: 3901
-  type: trojan
-  password: 262f1d150049457ac1d6e66b020fa980
-  sni: www.nintendogames.net
-  skip-cert-verify: false
-  udp: true
-- name: 香港 04 @SCHPD_SUB
-  server: 16.162.105.4
-  port: 41973
+  server: 54.168.85.73
+  port: 25343
   type: trojan
   password: BxceQaOe
   sni: t.me%252Fripaojiedian
   skip-cert-verify: true
   udp: true
 - name: 日本 08 @SCHPD_SUB
-  server: 175.41.195.26
-  port: 4920
+  server: 160.16.72.205
+  port: 3057
   type: trojan
-  password: 262f1d150049457ac1d6e66b020fa980
+  password: f389ed926e512e15f382dc3804029474
   sni: www.nintendogames.net
   skip-cert-verify: false
   udp: true
 - name: 日本 09 @SCHPD_SUB
-  server: 52.195.233.42
-  port: 1281
+  server: 160.16.106.99
+  port: 3057
   type: trojan
-  password: 262f1d150049457ac1d6e66b020fa980
+  password: f389ed926e512e15f382dc3804029474
   sni: www.nintendogames.net
   skip-cert-verify: false
   udp: true
 - name: 香港 05 @SCHPD_SUB
-  server: 18.162.142.234
-  port: 45947
+  server: 16.163.149.149
+  port: 4864
   type: trojan
   password: BxceQaOe
   sni: t.me%2Fripaojiedian
   skip-cert-verify: true
   udp: true
-- name: 香港 06 @SCHPD_SUB
-  server: board-02.ddnskunlun.com
-  port: 11985
+- name: 法国 07 @SCHPD_SUB
+  server: m.cnmjin.net
+  port: 16622
   type: vmess
-  uuid: a8bcce43-abda-315b-8e81-e3e65bcb3d07
+  uuid: aa0751be-6b03-49c0-97f0-9a845d8543c9
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 6076cfa5b57881d4da968c78ccb3d162.mobgslb.tbcache.com
   udp: true
-- name: 日本 10 @SCHPD_SUB
-  server: 160.16.72.33
-  port: 4920
-  type: trojan
-  password: 262f1d150049457ac1d6e66b020fa980
-  sni: www.nintendogames.net
-  skip-cert-verify: false
+- name: 阿联酋 01 @SCHPD_SUB
+  type: vless
+  server: ae2.suio.me
+  port: 443
+  uuid: 6ca2c654-53b3-4ac1-a2ef-c4b4ee88727a
+  servername: ae2.suio.me
+  tls: true
   udp: true
-- name: 日本 11 @SCHPD_SUB
-  server: 202.181.103.246
-  port: 3419
-  type: trojan
-  password: 262f1d150049457ac1d6e66b020fa980
-  sni: www.nintendogames.net
-  skip-cert-verify: false
+- name: 其他地区 04 @SCHPD_SUB
+  type: vless
+  server: best4.pineappled.org
+  port: 443
+  uuid: 71322f86-f37a-4929-ada0-05e6a2688145
+  servername: www.apple.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ
+    short-id: '23'
   udp: true
-- name: 香港 07 @SCHPD_SUB
-  server: bgp1.stimaysmhy8.com
-  port: 14011
-  type: trojan
-  password: 984c7793-1447-4af5-9200-d514ad6fe329
+- name: 韩国 01 @SCHPD_SUB
+  type: vless
+  server: 218.150.33.69
+  port: 15050
+  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  network: ws
+  servername: ylnhh.cc.cd
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /Telegram🇨🇳@WangCai2
+    headers:
+      Host: ylnhh.cc.cd
   udp: true
-- name: 香港 08 @SCHPD_SUB
-  server: sg05.stimaysmhy8.com
-  port: 45005
-  type: trojan
-  password: 984c7793-1447-4af5-9200-d514ad6fe329
+- name: 韩国 02 @SCHPD_SUB
+  type: vless
+  server: 119.192.158.53
+  port: 25095
+  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  network: ws
+  servername: ylnhh.cc.cd
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /Telegram🇨🇳@WangCai2
+    headers:
+      Host: ylnhh.cc.cd
+  udp: true
+- name: 其他地区 05 @SCHPD_SUB
+  type: vless
+  server: nl4.pineappled.org
+  port: 443
+  uuid: 71322f86-f37a-4929-ada0-05e6a2688145
+  servername: www.apple.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ
+    short-id: '23'
+  udp: true
+- name: 新加坡 01 @SCHPD_SUB
+  type: vless
+  server: 43.160.248.66
+  port: 8443
+  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  network: ws
+  servername: ylnhh.cc.cd
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /Telegram🇨🇳@WangCai2
+    headers:
+      Host: ylnhh.cc.cd
+  udp: true
+- name: 爱沙尼亚 01 @SCHPD_SUB
+  type: vless
+  server: est.top.subtrust.ru
+  port: 443
+  uuid: 3130fccb-e72e-468d-b2ce-0721bb3058c8
+  servername: www.apple.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: pOdL1l8cGGg7qnOPAbDcAIVOgA7O8f75XevxeYyaYCg
+    short-id: cd11af
+  udp: true
+- name: 韩国 03 @SCHPD_SUB
+  type: vless
+  server: 218.155.23.9
+  port: 12184
+  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  network: ws
+  servername: ylnhh.cc.cd
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /Telegram🇨🇳@WangCai2
+    headers:
+      Host: ylnhh.cc.cd
+  udp: true
+- name: 德国 02 @SCHPD_SUB
+  type: vless
+  server: dee1.shubnechkin.online
+  port: 443
+  uuid: 7a1f4deb-0ea9-427e-bc9d-9297a08afa12
+  servername: vk.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: nBxkzpHPJpW3AXzEZSQc8V00RuPj1zrxe-hYSgNtzUY
+    short-id: b7
+  udp: true
+- name: 荷兰 02 @SCHPD_SUB
+  type: vless
+  server: dns.dressforida.monster
+  port: 443
+  uuid: 79149019-5abe-46f9-91ae-e1e7d1d2c408
+  servername: www.techradar.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 4YLfHf90V012Oyd2wHbwAXaJNvNUGrKWmatTKc165U8
+    short-id: 174c6cf22e22
+  udp: true
+- name: 韩国 04 @SCHPD_SUB
+  type: vless
+  server: 116.93.199.28
+  port: 21510
+  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  network: ws
+  servername: ylnhh.cc.cd
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /Telegram🇨🇳@WangCai2
+    headers:
+      Host: ylnhh.cc.cd
+  udp: true
+- name: 荷兰 03 @SCHPD_SUB
+  type: vless
+  server: nll.scroogethebest.com
+  port: 443
+  uuid: e2e1ddaa-1acf-4c4c-a211-92284f6440ed
+  servername: nll.scroogethebest.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
+    short-id: 4fa44664f6a566d3
+  udp: true
+- name: 西班牙 01 @SCHPD_SUB
+  type: vless
+  server: es.fasti.win
+  port: 443
+  uuid: a16bd0e2-ff2e-4e4c-a955-0c684255a065
+  servername: es.fasti.win
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: -YTGWg5DjsLDyaDfr1D83kiUK22LVcrK3yC53lqqigs
+    short-id: feedbacc
+  udp: true
+- name: 韩国 05 @SCHPD_SUB
+  type: vless
+  server: 121.157.190.209
+  port: 11717
+  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  network: ws
+  servername: ylnhh.cc.cd
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /Telegram🇨🇳@WangCai2
+    headers:
+      Host: ylnhh.cc.cd
+  udp: true
+- name: 韩国 06 @SCHPD_SUB
+  type: vless
+  server: 211.33.238.198
+  port: 15380
+  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  network: ws
+  servername: ylnhh.cc.cd
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /Telegram🇨🇳@WangCai2
+    headers:
+      Host: ylnhh.cc.cd
+  udp: true
+- name: 德国 03 @SCHPD_SUB
+  type: vless
+  server: 45.145.42.170
+  port: 8005
+  uuid: 00000000-0000-4000-8000-000000000000
+  network: ws
+  servername: sub.mot.ip-ddns.com
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: sub.mot.ip-ddns.com
+  udp: true
+- name: 韩国 07 @SCHPD_SUB
+  type: vless
+  server: 59.29.89.197
+  port: 18765
+  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  network: ws
+  servername: ylnhh.cc.cd
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /Telegram🇨🇳@WangCai2
+    headers:
+      Host: ylnhh.cc.cd
+  udp: true
+- name: 德国 04 @SCHPD_SUB
+  type: vless
+  server: 5.254.85.151
+  port: 443
+  uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
+  servername: germany.scroogethebest.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
+    short-id: 4fa44664f6a566d3
+  udp: true
+- name: 韩国 08 @SCHPD_SUB
+  type: vless
+  server: 116.93.199.28
+  port: 25524
+  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  network: ws
+  servername: ylnhh.cc.cd
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /Telegram🇨🇳@WangCai2
+    headers:
+      Host: ylnhh.cc.cd
+  udp: true
+- name: 法国 08 @SCHPD_SUB
+  type: vless
+  server: 89.208.113.120
+  port: 8082
+  uuid: 00000000-0000-4000-8000-000000000000
+  network: ws
+  servername: sub.mot.ip-ddns.com
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: sub.mot.ip-ddns.com
+  udp: true
+- name: 波兰 01 @SCHPD_SUB
+  type: vless
+  server: 45.144.51.136
+  port: 443
+  uuid: a16bd0e2-ff2e-4e4c-a955-0c684255a065
+  servername: pl.fasti.win
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: -YTGWg5DjsLDyaDfr1D83kiUK22LVcrK3yC53lqqigs
+    short-id: feedbacc
   udp: true
