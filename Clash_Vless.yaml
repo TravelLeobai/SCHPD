@@ -18,15 +18,16 @@ proxy-groups:
   proxies: &id001
   - 中国 01 @SCHPD_SUB
   - 中国 02 @SCHPD_SUB
-  - 中国 03 @SCHPD_SUB
-  - 中国 04 @SCHPD_SUB
-  - 中国 05 @SCHPD_SUB
-  - 俄罗斯联邦 01 @SCHPD_SUB
+  - 保加利亚 01 @SCHPD_SUB
   - 其他地区 01 @SCHPD_SUB
   - 其他地区 02 @SCHPD_SUB
+  - 哈萨克斯坦 01 @SCHPD_SUB
   - 奥地利 01 @SCHPD_SUB
   - 德国 01 @SCHPD_SUB
   - 德国 02 @SCHPD_SUB
+  - 德国 03 @SCHPD_SUB
+  - 德国 04 @SCHPD_SUB
+  - 新加坡 01 @SCHPD_SUB
   - 日本 01 @SCHPD_SUB
   - 日本 02 @SCHPD_SUB
   - 日本 03 @SCHPD_SUB
@@ -37,32 +38,22 @@ proxy-groups:
   - 日本 08 @SCHPD_SUB
   - 日本 09 @SCHPD_SUB
   - 日本 10 @SCHPD_SUB
-  - 法国 01 @SCHPD_SUB
-  - 法国 02 @SCHPD_SUB
-  - 法国 03 @SCHPD_SUB
-  - 法国 04 @SCHPD_SUB
-  - 法国 05 @SCHPD_SUB
-  - 法国 06 @SCHPD_SUB
   - 波兰 01 @SCHPD_SUB
-  - 波兰 02 @SCHPD_SUB
   - 澳大利亚 01 @SCHPD_SUB
-  - 澳大利亚 02 @SCHPD_SUB
   - 美国 01 @SCHPD_SUB
   - 美国 02 @SCHPD_SUB
   - 美国 03 @SCHPD_SUB
   - 美国 04 @SCHPD_SUB
-  - 西班牙 01 @SCHPD_SUB
-  - 西班牙 02 @SCHPD_SUB
-  - 韩国 01 @SCHPD_SUB
-  - 韩国 02 @SCHPD_SUB
+  - 美国 05 @SCHPD_SUB
+  - 美国 06 @SCHPD_SUB
+  - 芬兰 01 @SCHPD_SUB
+  - 芬兰 02 @SCHPD_SUB
   - 香港 01 @SCHPD_SUB
   - 香港 02 @SCHPD_SUB
   - 香港 03 @SCHPD_SUB
   - 香港 04 @SCHPD_SUB
   - 香港 05 @SCHPD_SUB
   - 香港 06 @SCHPD_SUB
-  - 香港 07 @SCHPD_SUB
-  - 香港 08 @SCHPD_SUB
 - name: 自动选择
   type: url-test
   url: http://connectivitycheck.gstatic.com/generate_204
@@ -78,306 +69,25 @@ proxy-groups:
 rules:
 - MATCH,Proxy
 proxies:
-- name: 中国 01 @SCHPD_SUB
-  server: v12.hdacd.com
-  port: 30812
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 0
-  cipher: auto
-  tls: false
+- name: 香港 01 @SCHPD_SUB
+  type: anytls
+  server: 96078085-t9l0g0-tcj7b6-d70y.hkt.east.wctype.com
+  port: 8300
+  password: 537d7098-fdbe-11ef-8ebc-f23c93141fad
+  sni: 96078085-t9l0g0-tcj7b6-d70y.hkt.east.wctype.com
   skip-cert-verify: true
-  udp: true
-- name: 法国 01 @SCHPD_SUB
-  server: 2001:bc8:32d7:302::10
-  port: 44579
-  type: vmess
-  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-path: /
-  ws-headers:
-    Host: 2001:bc8:32d7:302::10
-  udp: true
+  tls: true
+  udp: false
+  client-fingerprint: chrome
 - name: 德国 01 @SCHPD_SUB
+  type: vmess
   server: 82.198.246.97
   port: 180
-  type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
   tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 香港 01 @SCHPD_SUB
-  server: 103.181.164.145
-  port: 54022
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 奥地利 01 @SCHPD_SUB
-  server: 152.53.200.167
-  port: 8444
-  type: trojan
-  password: trojan
-  skip-cert-verify: true
-  udp: true
-- name: 香港 02 @SCHPD_SUB
-  server: caring-ghoul.rooster465.autos
-  port: 443
-  type: trojan
-  password: IL37892054
-  sni: caring-ghoul.rooster465.autos
-  skip-cert-verify: true
-  udp: true
-- name: 美国 01 @SCHPD_SUB
-  server: vc.fly.dev
-  port: 443
-  type: vmess
-  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
-  alterId: 32
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-path: /vc
-  ws-headers:
-    Host: vc.fly.dev
-  udp: true
-- name: 法国 02 @SCHPD_SUB
-  server: 2001:bc8:32d7:302::16
-  port: 44579
-  type: vmess
-  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-  ws-headers:
-    Host: AZERB.NET
-  udp: true
-- name: 香港 03 @SCHPD_SUB
-  server: v30.hdacd.com
-  port: 30830
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 美国 02 @SCHPD_SUB
-  server: d.810114.xyz
-  port: 443
-  type: vmess
-  uuid: 2ce2ab9a-ea25-45d3-80d9-c361878bb983
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-path: /mea
-  ws-headers:
-    Host: d.810114.xyz
-  udp: true
-- name: 波兰 01 @SCHPD_SUB
-  server: fluent-stingray.crayfish192.xyz
-  port: 443
-  type: trojan
-  password: IL37892054
-  sni: fluent-stingray.crayfish192.xyz
-  skip-cert-verify: true
-  udp: true
-- name: 西班牙 01 @SCHPD_SUB
-  server: 109.234.211.66
-  port: 8443
-  type: trojan
-  password: trojan
-  skip-cert-verify: true
-  udp: true
-- name: 西班牙 02 @SCHPD_SUB
-  server: 109.234.211.66
-  port: 2087
-  type: trojan
-  password: trojan
-  skip-cert-verify: true
-  udp: true
-- name: 中国 02 @SCHPD_SUB
-  server: v36.hdacd.com
-  port: 30836
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 香港 04 @SCHPD_SUB
-  server: 103.181.164.145
-  port: 51556
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 澳大利亚 01 @SCHPD_SUB
-  server: enhanced-crayfish.rooster465.autos
-  port: 443
-  type: trojan
-  password: IL37892054
-  sni: enhanced-crayfish.rooster465.autos
-  skip-cert-verify: true
-  udp: true
-- name: 中国 03 @SCHPD_SUB
-  server: v29.hdacd.com
-  port: 30829
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 中国 04 @SCHPD_SUB
-  server: v33.hdacd.com
-  port: 30833
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 香港 05 @SCHPD_SUB
-  server: 103.181.164.237
-  port: 34114
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 澳大利亚 02 @SCHPD_SUB
-  server: steady-lemming.rooster465.autos
-  port: 443
-  type: trojan
-  password: IL37892054
-  sni: steady-lemming.rooster465.autos
-  skip-cert-verify: true
-  udp: true
-- name: 法国 03 @SCHPD_SUB
-  server: 2001:bc8:32d7:302::15
-  port: 44579
-  type: vmess
-  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-  ws-headers:
-    Host: TURK.NET
-  udp: true
-- name: 韩国 01 @SCHPD_SUB
-  server: 220.92.22.170
-  port: 11000
-  type: trojan
-  password: trojan
-  skip-cert-verify: true
-  udp: true
-- name: 波兰 02 @SCHPD_SUB
-  server: outgoing-ladybird.rooster465.autos
-  port: 443
-  type: trojan
-  password: IL37892054
-  sni: outgoing-ladybird.rooster465.autos
-  skip-cert-verify: true
-  udp: true
-- name: 韩国 02 @SCHPD_SUB
-  server: 118.34.36.61
-  port: 10003
-  type: trojan
-  password: trojan
-  skip-cert-verify: true
-  udp: true
-- name: 法国 04 @SCHPD_SUB
-  server: 2001:bc8:32d7:302::11
-  port: 44579
-  type: vmess
-  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
-  ws-headers:
-    Host: TABRIZ.NET
-  udp: true
-- name: 法国 05 @SCHPD_SUB
-  server: 2001:bc8:32d7:302::14
-  port: 44579
-  type: vmess
-  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
-  ws-headers:
-    Host: TABRIZ.NET
-  udp: true
-- name: 中国 05 @SCHPD_SUB
-  server: v9.hdacd.com
-  port: 30809
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 法国 06 @SCHPD_SUB
-  server: 2001:bc8:32d7:302::17
-  port: 44579
-  type: vmess
-  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-  ws-headers:
-    Host: AZERB.NET
-  udp: true
-- name: 德国 02 @SCHPD_SUB
-  type: vless
-  server: 45.145.42.170
-  port: 8005
-  uuid: 00000000-0000-4000-8000-000000000000
-  network: ws
-  servername: sub.mot.ip-ddns.com
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: sub.mot.ip-ddns.com
+  skip-cert-verify: false
   udp: true
 - name: 其他地区 01 @SCHPD_SUB
   type: trojan
@@ -392,20 +102,80 @@ proxies:
     headers:
       Host: Koma-YT.PAGeS.Dev
   udp: true
-- name: 俄罗斯联邦 01 @SCHPD_SUB
-  type: vless
-  server: 193.9.49.65
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  network: ws
-  servername: r.icy.de5.net
+- name: 美国 01 @SCHPD_SUB
+  type: anytls
+  server: abe6142c-tb71c0-tgprfk-ddgs.los.west.wctype.com
+  port: 8300
+  password: c870fe5a-0729-11f0-8cf9-f23c93136cb3
+  sni: abe6142c-tb71c0-tgprfk-ddgs.los.west.wctype.com
+  skip-cert-verify: true
   tls: true
+  udp: false
+- name: 美国 02 @SCHPD_SUB
+  type: anytls
+  server: 76842b4a-tb71c0-tgprfk-ddgs.losjan20.west.wctype.com
+  port: 8300
+  password: c870fe5a-0729-11f0-8cf9-f23c93136cb3
+  sni: 76842b4a-tb71c0-tgprfk-ddgs.losjan20.west.wctype.com
+  skip-cert-verify: true
+  tls: true
+  udp: false
+- name: 德国 02 @SCHPD_SUB
+  type: vless
+  server: 185.94.29.156
+  port: 4001
+  uuid: 00000000-0000-4000-8000-000000000000
+  network: ws
+  servername: sub.mot.ip-ddns.com
+  tls: true
+  client-fingerprint: chrome
   ws-opts:
-    path: /?ed=2560
+    path: /
     headers:
-      Host: r.icy.de5.net
+      Host: sub.mot.ip-ddns.com
   udp: true
 - name: 美国 03 @SCHPD_SUB
+  type: anytls
+  server: c5e8d568-ta5ds0-tesmjk-ddgs.los.west.wctype.com
+  port: 8300
+  password: c870fe5a-0729-11f0-8cf9-f23c93136cb3
+  sni: c5e8d568-ta5ds0-tesmjk-ddgs.los.west.wctype.com
+  skip-cert-verify: true
+  tls: true
+  udp: false
+- name: 美国 04 @SCHPD_SUB
+  type: anytls
+  server: a2c1c42c-tb71c0-tee5aa-1glq.losjan20.west.wctype.com
+  port: 8300
+  password: df7bed3c-06eb-11f0-8ebc-f23c93141fad
+  sni: a2c1c42c-tb71c0-tee5aa-1glq.losjan20.west.wctype.com
+  skip-cert-verify: true
+  tls: true
+  udp: false
+- name: 中国 01 @SCHPD_SUB
+  type: vmess
+  server: v12.hdacd.com
+  port: 30812
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: 奥地利 01 @SCHPD_SUB
+  type: trojan
+  server: 152.53.200.167
+  port: 8444
+  password: trojan
+  sni: jflsjlaf.pages.dev
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: jflsjlaf.pages.dev
+  udp: true
+- name: 美国 05 @SCHPD_SUB
   type: vless
   server: 192.200.160.20
   port: 443
@@ -418,19 +188,16 @@ proxies:
     headers:
       Host: 639073677243557970.camry-perma.info
   udp: true
-- name: 其他地区 02 @SCHPD_SUB
-  type: vless
-  server: 104.18.32.47
-  port: 2052
-  uuid: 5e62ddcf-78c9-4b15-803a-436c8c839ddc
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: oBEDiENt-noiseqJf5ja18yF.wIndLer.CO.UK.
+- name: 香港 02 @SCHPD_SUB
+  type: trojan
+  server: 58.152.25.253
+  port: 443
+  password: BxceQaOe
+  sni: t.me/ripaojiedian
+  skip-cert-verify: true
+  tls: true
   udp: true
-- name: 香港 06 @SCHPD_SUB
+- name: 香港 03 @SCHPD_SUB
   server: v10.hdacd.com
   port: 30807
   type: vmess
@@ -440,109 +207,263 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: 美国 04 @SCHPD_SUB
-  server: cn01.365cloud8754.com
-  port: 6001
-  type: vmess
-  uuid: db75bc92-4e32-48dd-b792-d7a8b707626c
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
 - name: 日本 01 @SCHPD_SUB
-  server: 43.207.232.176
+  server: 18.183.73.66
   port: 921
   type: trojan
-  password: 86e150eb21c6faee48e81d496d7f61c2
+  password: 6d29eb2f74293cb01a19b32cf08ad2e9
   sni: www.nintendogames.net
   skip-cert-verify: false
   udp: true
-- name: 香港 07 @SCHPD_SUB
-  server: 58.152.18.28
-  port: 443
-  type: trojan
-  password: BxceQaOe
-  sni: t.me%2Fripaojiedian
-  skip-cert-verify: true
-  udp: true
 - name: 日本 02 @SCHPD_SUB
-  server: 13.230.175.163
-  port: 51885
+  server: 54.95.21.63
+  port: 36854
   type: trojan
   password: BxceQaOe
   sni: t.me%2Fripaojiedian
   skip-cert-verify: true
   udp: true
 - name: 日本 03 @SCHPD_SUB
-  server: 13.231.224.38
-  port: 4945
-  type: trojan
-  password: BxceQaOe
-  sni: t.me%252Fripaojiedian
-  skip-cert-verify: true
-  udp: true
-- name: 日本 04 @SCHPD_SUB
-  server: 18.183.166.176
-  port: 2001
-  type: trojan
-  password: 86e150eb21c6faee48e81d496d7f61c2
-  sni: www.nintendogames.net
-  skip-cert-verify: false
-  udp: true
-- name: 日本 05 @SCHPD_SUB
-  server: 153.121.38.213
-  port: 4937
-  type: trojan
-  password: 86e150eb21c6faee48e81d496d7f61c2
-  sni: www.nintendogames.net
-  skip-cert-verify: false
-  udp: true
-- name: 日本 06 @SCHPD_SUB
-  server: 13.230.175.163
-  port: 3419
-  type: trojan
-  password: 86e150eb21c6faee48e81d496d7f61c2
-  sni: www.nintendogames.net
-  skip-cert-verify: false
-  udp: true
-- name: 日本 07 @SCHPD_SUB
-  server: 153.121.38.213
-  port: 3419
-  type: trojan
-  password: 86e150eb21c6faee48e81d496d7f61c2
-  sni: www.nintendogames.net
-  skip-cert-verify: false
-  udp: true
-- name: 香港 08 @SCHPD_SUB
-  server: 95.40.8.7
-  port: 41973
-  type: trojan
-  password: BxceQaOe
-  sni: t.me%252Fripaojiedian
-  skip-cert-verify: true
-  udp: true
-- name: 日本 08 @SCHPD_SUB
-  server: 153.121.38.213
-  port: 4019
-  type: trojan
-  password: 86e150eb21c6faee48e81d496d7f61c2
-  sni: www.nintendogames.net
-  skip-cert-verify: false
-  udp: true
-- name: 日本 09 @SCHPD_SUB
-  server: 13.115.91.176
-  port: 4920
-  type: trojan
-  password: 86e150eb21c6faee48e81d496d7f61c2
-  sni: www.nintendogames.net
-  skip-cert-verify: false
-  udp: true
-- name: 日本 10 @SCHPD_SUB
-  server: 54.95.208.150
-  port: 14919
+  server: 54.95.21.63
+  port: 6313
   type: trojan
   password: BxceQaOe
   sni: t.me%2Fripaojiedian
   skip-cert-verify: true
+  udp: true
+- name: 日本 04 @SCHPD_SUB
+  server: 13.113.229.223
+  port: 3022
+  type: trojan
+  password: BxceQaOe
+  sni: t.me%252Fripaojiedian
+  skip-cert-verify: true
+  udp: true
+- name: 日本 05 @SCHPD_SUB
+  server: 52.195.4.144
+  port: 2001
+  type: trojan
+  password: 6d29eb2f74293cb01a19b32cf08ad2e9
+  sni: www.nintendogames.net
+  skip-cert-verify: false
+  udp: true
+- name: 日本 06 @SCHPD_SUB
+  server: 160.16.106.99
+  port: 4937
+  type: trojan
+  password: 6d29eb2f74293cb01a19b32cf08ad2e9
+  sni: www.nintendogames.net
+  skip-cert-verify: false
+  udp: true
+- name: 日本 07 @SCHPD_SUB
+  server: 52.195.4.144
+  port: 4674
+  type: trojan
+  password: 6d29eb2f74293cb01a19b32cf08ad2e9
+  sni: www.nintendogames.net
+  skip-cert-verify: false
+  udp: true
+- name: 日本 08 @SCHPD_SUB
+  server: 52.192.225.14
+  port: 1524
+  type: trojan
+  password: 6d29eb2f74293cb01a19b32cf08ad2e9
+  sni: www.nintendogames.net
+  skip-cert-verify: false
+  udp: true
+- name: 香港 04 @SCHPD_SUB
+  server: 95.40.2.4
+  port: 22045
+  type: trojan
+  password: BxceQaOe
+  sni: t.me%252Fripaojiedian
+  skip-cert-verify: true
+  udp: true
+- name: 日本 09 @SCHPD_SUB
+  server: 13.230.200.237
+  port: 3057
+  type: trojan
+  password: 6d29eb2f74293cb01a19b32cf08ad2e9
+  sni: www.nintendogames.net
+  skip-cert-verify: false
+  udp: true
+- name: 日本 10 @SCHPD_SUB
+  server: 52.192.225.14
+  port: 4019
+  type: trojan
+  password: 6d29eb2f74293cb01a19b32cf08ad2e9
+  sni: www.nintendogames.net
+  skip-cert-verify: false
+  udp: true
+- name: 香港 05 @SCHPD_SUB
+  server: 18.166.177.165
+  port: 49534
+  type: trojan
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+  udp: true
+- name: 中国 02 @SCHPD_SUB
+  type: vless
+  server: 139.196.41.153
+  port: 443
+  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  network: ws
+  servername: ylnhh.cc.cd
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /gs5=6666:6666@47.239.178.125:6666
+    headers:
+      Host: ylnhh.cc.cd
+  udp: true
+- name: 芬兰 01 @SCHPD_SUB
+  type: vless
+  server: logggg.nammknammknammknammknammkb2.ir
+  port: 443
+  uuid: d4de1f64-bf3c-4d97-9663-0091f8c07359
+  servername: logggg.nammknammknammknammknammkb2.ir
+  tls: true
+  client-fingerprint: random
+  reality-opts:
+    public-key: RravQN06gzsNsm5ojEhZGrxBgLGEpqEThtHEltdjpBk
+    short-id: b3d76d
+  udp: true
+- name: 澳大利亚 01 @SCHPD_SUB
+  type: trojan
+  server: steady-lemming.rooster465.autos
+  port: 443
+  password: IL37892054
+  sni: steady-lemming.rooster465.autos
+  skip-cert-verify: false
+  tls: false
+  udp: true
+- name: 其他地区 02 @SCHPD_SUB
+  type: vless
+  server: vip1.kaixincloud.top
+  port: 443
+  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
+  network: ws
+  servername: r.icy.de5.net
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: r.icy.de5.net
+  udp: true
+- name: 德国 03 @SCHPD_SUB
+  type: vless
+  server: der.jojack.ru
+  port: 443
+  uuid: c67f81df-34e8-4cb3-ab43-599585775fa9
+  servername: der.jojack.ru
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: xpv3OgIQ4ND_ZaiLxjHk1JsykVAVUY73UkyxPlU8Clc
+    short-id: 695f0df252f9889d
+  udp: true
+- name: 波兰 01 @SCHPD_SUB
+  type: vless
+  server: pl234.mechvpn.online
+  port: 443
+  uuid: 729764b1-149c-49f2-b170-322544df7b5b
+  servername: pl234.mechvpn.online
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  udp: true
+- name: 哈萨克斯坦 01 @SCHPD_SUB
+  type: vless
+  server: 45.136.59.44
+  port: 13344
+  uuid: 3fce3b0d-0b92-4e92-9a78-18051dd648b4
+  servername: yahoo.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: DC71RjKr16drr8gqK8QhEuCVLpkbBfUfPb9Far8Jkzo
+    short-id: e2bd9802e29deb
+  udp: true
+- name: 香港 06 @SCHPD_SUB
+  type: vless
+  server: 64.120.89.69
+  port: 20231
+  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
+  network: ws
+  servername: r.icy.de5.net
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: r.icy.de5.net
+  udp: true
+- name: 美国 06 @SCHPD_SUB
+  type: vless
+  server: 157.254.223.44
+  port: 18959
+  uuid: d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa
+  servername: itunes.apple.com
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: -hwVEdgFkvjku8ESuDoAA7id5yGGv_zXBvBW_RdhmHA
+    short-id: d557c6895d014075
+  udp: true
+- name: 德国 04 @SCHPD_SUB
+  type: vless
+  server: 45.145.42.170
+  port: 8005
+  uuid: 00000000-0000-4000-8000-000000000000
+  network: ws
+  servername: sub.mot.ip-ddns.com
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: sub.mot.ip-ddns.com
+  udp: true
+- name: 保加利亚 01 @SCHPD_SUB
+  type: vless
+  server: desta.axinode.sbs
+  port: 10965
+  uuid: d1209ffb-c159-48d5-b40d-542ce11fc768
+  servername: deepl.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: lHxeD2nYtDb1V7JseV-sUTEuqH6_jie7U_iOARX7cT0
+    short-id: 9f3a7c6d2e8b41af
+  udp: true
+- name: 芬兰 02 @SCHPD_SUB
+  type: vless
+  server: 62.60.237.240
+  port: 443
+  uuid: d4de1f64-bf3c-4d97-9663-0091f8c07359
+  servername: logggg.nammknammknammknammknammkb2.ir
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: RravQN06gzsNsm5ojEhZGrxBgLGEpqEThtHEltdjpBk
+    short-id: b3d76d
+  udp: true
+- name: 新加坡 01 @SCHPD_SUB
+  type: vless
+  server: 47.245.99.66
+  port: 11001
+  uuid: 00000000-0000-4000-8000-000000000000
+  network: ws
+  servername: sub.mot.ip-ddns.com
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: sub.mot.ip-ddns.com
   udp: true
