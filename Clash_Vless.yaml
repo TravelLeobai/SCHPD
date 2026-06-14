@@ -16,24 +16,27 @@ proxy-groups:
 - name: 手动选择
   type: select
   proxies: &id001
-  - 以色列 01 @SCHPD_SUB
-  - 伊拉克 01 @SCHPD_SUB
-  - 伊拉克 02 @SCHPD_SUB
-  - 伊拉克 03 @SCHPD_SUB
-  - 伊朗 01 @SCHPD_SUB
-  - 伊朗 02 @SCHPD_SUB
-  - 伊朗 03 @SCHPD_SUB
+  - 俄罗斯联邦 01 @SCHPD_SUB
+  - 俄罗斯联邦 02 @SCHPD_SUB
+  - 俄罗斯联邦 03 @SCHPD_SUB
+  - 俄罗斯联邦 04 @SCHPD_SUB
   - 其他地区 01 @SCHPD_SUB
   - 其他地区 02 @SCHPD_SUB
   - 其他地区 03 @SCHPD_SUB
   - 其他地区 04 @SCHPD_SUB
   - 其他地区 05 @SCHPD_SUB
-  - 加拿大 01 @SCHPD_SUB
+  - 其他地区 06 @SCHPD_SUB
+  - 其他地区 07 @SCHPD_SUB
+  - 其他地区 08 @SCHPD_SUB
+  - 其他地区 09 @SCHPD_SUB
+  - 其他地区 10 @SCHPD_SUB
+  - 其他地区 11 @SCHPD_SUB
+  - 印度尼西亚 01 @SCHPD_SUB
+  - 印度尼西亚 02 @SCHPD_SUB
+  - 台湾 01 @SCHPD_SUB
+  - 台湾 02 @SCHPD_SUB
+  - 台湾 03 @SCHPD_SUB
   - 奥地利 01 @SCHPD_SUB
-  - 奥地利 02 @SCHPD_SUB
-  - 奥地利 03 @SCHPD_SUB
-  - 奥地利 04 @SCHPD_SUB
-  - 奥地利 05 @SCHPD_SUB
   - 德国 01 @SCHPD_SUB
   - 德国 02 @SCHPD_SUB
   - 德国 03 @SCHPD_SUB
@@ -45,82 +48,31 @@ proxy-groups:
   - 德国 09 @SCHPD_SUB
   - 德国 10 @SCHPD_SUB
   - 德国 11 @SCHPD_SUB
-  - 德国 12 @SCHPD_SUB
-  - 德国 13 @SCHPD_SUB
-  - 德国 14 @SCHPD_SUB
-  - 德国 15 @SCHPD_SUB
-  - 德国 16 @SCHPD_SUB
-  - 德国 17 @SCHPD_SUB
-  - 德国 18 @SCHPD_SUB
-  - 德国 19 @SCHPD_SUB
-  - 德国 20 @SCHPD_SUB
-  - 德国 21 @SCHPD_SUB
-  - 德国 22 @SCHPD_SUB
-  - 德国 23 @SCHPD_SUB
-  - 德国 24 @SCHPD_SUB
-  - 德国 25 @SCHPD_SUB
-  - 德国 26 @SCHPD_SUB
-  - 德国 27 @SCHPD_SUB
-  - 德国 28 @SCHPD_SUB
-  - 德国 29 @SCHPD_SUB
-  - 德国 30 @SCHPD_SUB
-  - 德国 31 @SCHPD_SUB
-  - 德国 32 @SCHPD_SUB
-  - 德国 33 @SCHPD_SUB
-  - 德国 34 @SCHPD_SUB
-  - 德国 35 @SCHPD_SUB
-  - 德国 36 @SCHPD_SUB
-  - 德国 37 @SCHPD_SUB
-  - 德国 38 @SCHPD_SUB
-  - 德国 39 @SCHPD_SUB
-  - 德国 40 @SCHPD_SUB
-  - 德国 41 @SCHPD_SUB
-  - 德国 42 @SCHPD_SUB
-  - 德国 43 @SCHPD_SUB
-  - 德国 44 @SCHPD_SUB
-  - 德国 45 @SCHPD_SUB
-  - 德国 46 @SCHPD_SUB
-  - 德国 47 @SCHPD_SUB
-  - 德国 48 @SCHPD_SUB
-  - 德国 49 @SCHPD_SUB
-  - 德国 50 @SCHPD_SUB
-  - 德国 51 @SCHPD_SUB
-  - 德国 52 @SCHPD_SUB
-  - 德国 53 @SCHPD_SUB
-  - 德国 54 @SCHPD_SUB
-  - 德国 55 @SCHPD_SUB
-  - 德国 56 @SCHPD_SUB
-  - 德国 57 @SCHPD_SUB
-  - 德国 58 @SCHPD_SUB
+  - 意大利 01 @SCHPD_SUB
+  - 拉脱维亚 01 @SCHPD_SUB
+  - 拉脱维亚 02 @SCHPD_SUB
+  - 拉脱维亚 03 @SCHPD_SUB
+  - 挪威 01 @SCHPD_SUB
   - 捷克 01 @SCHPD_SUB
-  - 捷克 02 @SCHPD_SUB
-  - 捷克 03 @SCHPD_SUB
-  - 捷克 04 @SCHPD_SUB
-  - 捷克 05 @SCHPD_SUB
-  - 捷克 06 @SCHPD_SUB
+  - 摩尔多瓦 01 @SCHPD_SUB
+  - 新加坡 01 @SCHPD_SUB
+  - 新加坡 02 @SCHPD_SUB
+  - 新加坡 03 @SCHPD_SUB
+  - 新加坡 04 @SCHPD_SUB
+  - 新加坡 05 @SCHPD_SUB
+  - 新加坡 06 @SCHPD_SUB
   - 日本 01 @SCHPD_SUB
   - 日本 02 @SCHPD_SUB
   - 日本 03 @SCHPD_SUB
-  - 日本 04 @SCHPD_SUB
   - 法国 01 @SCHPD_SUB
-  - 法国 02 @SCHPD_SUB
-  - 法国 03 @SCHPD_SUB
-  - 法国 04 @SCHPD_SUB
+  - 澳大利亚 01 @SCHPD_SUB
+  - 爱沙尼亚 01 @SCHPD_SUB
+  - 爱沙尼亚 02 @SCHPD_SUB
   - 瑞典 01 @SCHPD_SUB
   - 瑞典 02 @SCHPD_SUB
   - 瑞典 03 @SCHPD_SUB
-  - 瑞典 04 @SCHPD_SUB
-  - 瑞典 05 @SCHPD_SUB
-  - 瑞典 06 @SCHPD_SUB
-  - 瑞典 07 @SCHPD_SUB
   - 瑞士 01 @SCHPD_SUB
-  - 瑞士 02 @SCHPD_SUB
-  - 瑞士 03 @SCHPD_SUB
-  - 瑞士 04 @SCHPD_SUB
-  - 瑞士 05 @SCHPD_SUB
-  - 瑞士 06 @SCHPD_SUB
-  - 瑞士 07 @SCHPD_SUB
-  - 瑞士 08 @SCHPD_SUB
+  - 罗马尼亚 01 @SCHPD_SUB
   - 美国 01 @SCHPD_SUB
   - 美国 02 @SCHPD_SUB
   - 美国 03 @SCHPD_SUB
@@ -142,8 +94,18 @@ proxy-groups:
   - 美国 19 @SCHPD_SUB
   - 美国 20 @SCHPD_SUB
   - 美国 21 @SCHPD_SUB
+  - 美国 22 @SCHPD_SUB
+  - 美国 23 @SCHPD_SUB
+  - 美国 24 @SCHPD_SUB
+  - 美国 25 @SCHPD_SUB
+  - 美国 26 @SCHPD_SUB
+  - 美国 27 @SCHPD_SUB
   - 英国 01 @SCHPD_SUB
   - 荷兰 01 @SCHPD_SUB
+  - 荷兰 02 @SCHPD_SUB
+  - 荷兰 03 @SCHPD_SUB
+  - 荷兰 04 @SCHPD_SUB
+  - 西班牙 01 @SCHPD_SUB
   - 阿联酋 01 @SCHPD_SUB
   - 韩国 01 @SCHPD_SUB
   - 韩国 02 @SCHPD_SUB
@@ -151,60 +113,6 @@ proxy-groups:
   - 韩国 04 @SCHPD_SUB
   - 韩国 05 @SCHPD_SUB
   - 韩国 06 @SCHPD_SUB
-  - 韩国 07 @SCHPD_SUB
-  - 韩国 08 @SCHPD_SUB
-  - 韩国 09 @SCHPD_SUB
-  - 韩国 10 @SCHPD_SUB
-  - 韩国 11 @SCHPD_SUB
-  - 韩国 12 @SCHPD_SUB
-  - 韩国 13 @SCHPD_SUB
-  - 韩国 14 @SCHPD_SUB
-  - 韩国 15 @SCHPD_SUB
-  - 韩国 16 @SCHPD_SUB
-  - 韩国 17 @SCHPD_SUB
-  - 韩国 18 @SCHPD_SUB
-  - 韩国 19 @SCHPD_SUB
-  - 韩国 20 @SCHPD_SUB
-  - 韩国 21 @SCHPD_SUB
-  - 韩国 22 @SCHPD_SUB
-  - 韩国 23 @SCHPD_SUB
-  - 韩国 24 @SCHPD_SUB
-  - 韩国 25 @SCHPD_SUB
-  - 韩国 26 @SCHPD_SUB
-  - 韩国 27 @SCHPD_SUB
-  - 韩国 28 @SCHPD_SUB
-  - 韩国 29 @SCHPD_SUB
-  - 韩国 30 @SCHPD_SUB
-  - 韩国 31 @SCHPD_SUB
-  - 韩国 32 @SCHPD_SUB
-  - 韩国 33 @SCHPD_SUB
-  - 韩国 34 @SCHPD_SUB
-  - 韩国 35 @SCHPD_SUB
-  - 韩国 36 @SCHPD_SUB
-  - 韩国 37 @SCHPD_SUB
-  - 韩国 38 @SCHPD_SUB
-  - 韩国 39 @SCHPD_SUB
-  - 韩国 40 @SCHPD_SUB
-  - 韩国 41 @SCHPD_SUB
-  - 韩国 42 @SCHPD_SUB
-  - 韩国 43 @SCHPD_SUB
-  - 韩国 44 @SCHPD_SUB
-  - 韩国 45 @SCHPD_SUB
-  - 韩国 46 @SCHPD_SUB
-  - 韩国 47 @SCHPD_SUB
-  - 韩国 48 @SCHPD_SUB
-  - 韩国 49 @SCHPD_SUB
-  - 韩国 50 @SCHPD_SUB
-  - 韩国 51 @SCHPD_SUB
-  - 韩国 52 @SCHPD_SUB
-  - 韩国 53 @SCHPD_SUB
-  - 韩国 54 @SCHPD_SUB
-  - 韩国 55 @SCHPD_SUB
-  - 韩国 56 @SCHPD_SUB
-  - 韩国 57 @SCHPD_SUB
-  - 韩国 58 @SCHPD_SUB
-  - 韩国 59 @SCHPD_SUB
-  - 韩国 60 @SCHPD_SUB
   - 香港 01 @SCHPD_SUB
   - 香港 02 @SCHPD_SUB
   - 香港 03 @SCHPD_SUB
@@ -214,6 +122,18 @@ proxy-groups:
   - 香港 07 @SCHPD_SUB
   - 香港 08 @SCHPD_SUB
   - 香港 09 @SCHPD_SUB
+  - 香港 10 @SCHPD_SUB
+  - 香港 11 @SCHPD_SUB
+  - 香港 12 @SCHPD_SUB
+  - 香港 13 @SCHPD_SUB
+  - 香港 14 @SCHPD_SUB
+  - 香港 15 @SCHPD_SUB
+  - 香港 16 @SCHPD_SUB
+  - 香港 17 @SCHPD_SUB
+  - 香港 18 @SCHPD_SUB
+  - 香港 19 @SCHPD_SUB
+  - 香港 20 @SCHPD_SUB
+  - 香港 21 @SCHPD_SUB
 - name: 自动选择
   type: url-test
   url: http://connectivitycheck.gstatic.com/generate_204
@@ -229,85 +149,355 @@ proxy-groups:
 rules:
 - MATCH,Proxy
 proxies:
-- name: 奥地利 01 @SCHPD_SUB
-  type: trojan
-  server: 152.53.228.86
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
+- name: 日本 01 @SCHPD_SUB
+  type: vmess
+  server: 2a02:6ea0:d32f::f8fe:349b
+  port: 24202
+  uuid: b20a7042-70ff-4376-a79f-b68f9edb7519
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
   ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
+    path: /github.com/Alvin9999-newpac/fanqiang
   udp: true
-- name: 瑞士 01 @SCHPD_SUB
-  type: trojan
-  server: 138.124.28.173
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
+- name: 美国 01 @SCHPD_SUB
+  type: vless
+  server: 199.232.197.131
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  network: ws
+  tls: false
   ws-opts:
     path: /
     headers:
-      Host: kfm-bn0.pages.dev
+      Host: max-gb1.global.ssl.fastly.net
+  skip-cert-verify: true
   udp: true
-- name: 捷克 01 @SCHPD_SUB
+- name: 其他地区 01 @SCHPD_SUB
   type: trojan
-  server: 194.87.77.91
+  server: 188.114.97.6
   port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
+  password: mitivpn
+  sni: 2.1.mitivpn.dee.srfsl.gleobal.fastl3y.n3et.mitivpn.site
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
   tls: true
   ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    path: https://chatgpt.com
     headers:
-      Host: kfm-bn0.pages.dev
+      Host: mitivpn.de.ssl.global.fastly.net.mitivpn.site
   udp: true
-- name: 伊拉克 01 @SCHPD_SUB
+- name: 美国 02 @SCHPD_SUB
   type: vless
-  server: 178.17.50.111
+  server: 151.101.2.219
+  port: 80
+  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
+  network: ws
+  servername: max-gb1.global.ssl.fastly.net
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+  skip-cert-verify: true
+  udp: true
+- name: 美国 03 @SCHPD_SUB
+  type: vless
+  server: 151.101.0.1
+  port: 80
+  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
+  network: ws
+  servername: max-gb1.global.ssl.fastly.net
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+  skip-cert-verify: true
+  udp: true
+- name: 美国 04 @SCHPD_SUB
+  type: vless
+  server: de.pink-perfect.ru
   port: 443
-  uuid: 36f6f998-029e-48e2-ba30-24e2a8159075
-  servername: ads.x5.ru
+  uuid: 8ea0665e-dee3-418c-8822-1f70f350f2db
+  servername: yandex.net
   tls: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
   reality-opts:
-    public-key: vfmqSXTEjdIOgz43eZTNzBRztAvd1U1dDkSz_mnaSk4
-    short-id: 82c8140feb118043
+    public-key: 2fgsbEAn-ALVpjnE4ZTPrzaZY70vVplYwldCnslInE0
+    short-id: 86b80f1e713a33ad
+  skip-cert-verify: true
   udp: true
-- name: 德国 01 @SCHPD_SUB
-  type: trojan
-  server: 64.188.70.233
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
+- name: 美国 05 @SCHPD_SUB
+  type: vless
+  server: speedtest.net
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  network: ws
+  servername: max-gb1.global.ssl.fastly.net
+  tls: false
   ws-opts:
     path: /
     headers:
-      Host: kfm-bn0.pages.dev
+      Host: max-gb1.global.ssl.fastly.net
+  skip-cert-verify: true
+  udp: true
+- name: 美国 06 @SCHPD_SUB
+  type: vless
+  server: 151.101.194.219
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  network: ws
+  servername: max-gb1.global.ssl.fastly.net
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+  skip-cert-verify: true
+  udp: true
+- name: 美国 07 @SCHPD_SUB
+  type: vless
+  server: 167.82.0.1
+  port: 80
+  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+  skip-cert-verify: true
+  udp: true
+- name: 俄罗斯联邦 01 @SCHPD_SUB
+  type: vless
+  server: r1.mizulina.top
+  port: 22231
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+  servername: r1.mizulina.top
+  tls: true
+  client-fingerprint: edge
+  skip-cert-verify: true
   udp: true
 - name: 香港 01 @SCHPD_SUB
   type: vmess
   server: 103.181.164.145
   port: 54022
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
+  alterId: 0
   cipher: auto
   tls: false
-  skip-cert-verify: false
+  skip-cert-verify: true
+  udp: true
+- name: 德国 01 @SCHPD_SUB
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  skip-cert-verify: true
   udp: true
 - name: 德国 02 @SCHPD_SUB
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 德国 03 @SCHPD_SUB
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 德国 04 @SCHPD_SUB
   type: vless
-  server: 193.23.219.205
+  server: 178.215.238.148
   port: 8443
+  uuid: 21c1132b-068c-46fb-880e-3268f6a30e7f
+  servername: eh.vk.com
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: Crjd0I6hcasRXZcfNf7cs-YtJLpQ8u-t1CbwHIDAciU
+    short-id: 478dc6
+  skip-cert-verify: true
+  udp: true
+- name: 美国 08 @SCHPD_SUB
+  type: vless
+  server: 80.93.202.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime02.workers.dev
+  skip-cert-verify: true
+  udp: true
+- name: 俄罗斯联邦 02 @SCHPD_SUB
+  type: vless
+  server: 85.234.114.53
+  port: 443
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+  servername: r1.mizulina.top
+  tls: true
+  client-fingerprint: edge
+  skip-cert-verify: true
+  udp: true
+- name: 俄罗斯联邦 03 @SCHPD_SUB
+  type: vless
+  server: 85.234.114.53
+  port: 22231
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+  servername: r1.mizulina.top
+  tls: true
+  client-fingerprint: edge
+  skip-cert-verify: true
+  udp: true
+- name: 香港 02 @SCHPD_SUB
+  type: vmess
+  server: 103.181.164.145
+  port: 51556
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 韩国 01 @SCHPD_SUB
+  type: trojan
+  server: 121.180.171.43
+  port: 11310
+  password: GKHWMe2R4qwNcNxu6l3KMkdd
+  sni: vpn1.rnmcnm.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trj-ws
+    headers:
+      Host: vpn1.rnmcnm.com
+  udp: true
+- name: 韩国 02 @SCHPD_SUB
+  type: trojan
+  server: 121.178.83.161
+  port: 26214
+  password: GKHWMe2R4qwNcNxu6l3KMkdd
+  sni: vpn1.rnmcnm.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trj-ws
+    headers:
+      Host: vpn1.rnmcnm.com
+  udp: true
+- name: 台湾 01 @SCHPD_SUB
+  type: trojan
+  server: jpbgp.netvigor.cc
+  port: 19128
+  password: gcuCpQfaiVeDBdWG
+  sni: yazhou10.dynu.net
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 其他地区 02 @SCHPD_SUB
+  type: vless
+  server: cf4.danfeng.eu.org
+  port: 2053
+  uuid: bafacd98-136a-4530-838d-4e5c51838dac
+  network: ws
+  servername: juzi8186.qea.ccwu.cc
+  tls: true
+  client-fingerprint: firefox
+  ws-opts:
+    path: /tv/juzibaipiao?ed=2560
+    headers:
+      Host: juzi8186.qea.ccwu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 瑞典 01 @SCHPD_SUB
+  type: vless
+  server: swe-8t.freeonline.pro
+  port: 443
+  uuid: 980231fb-4372-5c81-b696-20aa34d33af0
+  servername: www.microsoft.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 978-Yxgtd3AWTVfiXEQqCstdwrT1qgsgleGPIRGQDl8
+    short-id: bdac121c7debdaba
+  skip-cert-verify: true
+  udp: true
+- name: 荷兰 01 @SCHPD_SUB
+  type: vless
+  server: serv-ne-3.whit3.net
+  port: 10444
+  uuid: 49f3fec2-1a21-481e-ae65-7c32ae262582
+  servername: serv-ne-3.whit3.net
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: praGYag8YPbz_rcd_Pa6Fqsi_IiQtO3e1AosYBcu6h4
+    short-id: 378086fbdb7c61cd
+  skip-cert-verify: true
+  udp: true
+- name: 德国 05 @SCHPD_SUB
+  type: vless
+  server: 77.37.33.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime57.workers.dev
+  skip-cert-verify: true
+  udp: true
+- name: 拉脱维亚 01 @SCHPD_SUB
+  type: vless
+  server: 193.163.203.76
+  port: 50592
+  uuid: 439f353b-b52f-4355-93d8-26e0567d5308
+  servername: api-maps.yandex.ru
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: kATzSBDyNkm6Ee7p8Ad8iPD5CrJmkJ5n1T-l-LCRmXQ
+    short-id: b7ca855a4763a7ac
+  skip-cert-verify: true
+  udp: true
+- name: 德国 06 @SCHPD_SUB
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 韩国 03 @SCHPD_SUB
+  type: vless
+  server: 121.180.225.222
+  port: 19530
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
   servername: sni.latonyamadeline.ndjp.net
@@ -316,2453 +506,1048 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: sni.latonyamadeline.ndjp.net
+  skip-cert-verify: true
   udp: true
-- name: 德国 03 @SCHPD_SUB
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 德国 04 @SCHPD_SUB
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 美国 01 @SCHPD_SUB
-  type: trojan
-  server: 167.68.4.199
-  port: 2053
-  password: Aimer
-  sni: epge.muarua.filegear-sg.me
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed
-    headers:
-      Host: epge.muarua.filegear-sg.me
-  udp: true
-- name: 伊拉克 02 @SCHPD_SUB
-  type: trojan
-  server: 178.17.48.170
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
+- name: 韩国 04 @SCHPD_SUB
+  type: vless
+  server: 121.180.225.222
+  port: 16000
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.latonyamadeline.ndjp.net
   tls: true
   ws-opts:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
-      Host: kfm-bn0.pages.dev
+      Host: sni.latonyamadeline.ndjp.net
+  skip-cert-verify: true
   udp: true
-- name: 其他地区 01 @SCHPD_SUB
+- name: 荷兰 02 @SCHPD_SUB
   type: trojan
-  server: 172.66.44.230
-  port: 8443
+  server: 91.221.190.80
+  port: 443
   password: 8r<[9'l6hAO#8ZQi
   sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   ws-opts:
-    path: /tro8sFW1S91B6sZrM1?ed=2560
+    path: /trTelegram🇨🇳 @WangCai2
     headers:
       Host: Koma-YT.PAGeS.Dev
   udp: true
-- name: 捷克 02 @SCHPD_SUB
+- name: 意大利 01 @SCHPD_SUB
   type: trojan
-  server: 194.87.77.2
+  server: 151.241.215.148
   port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
   tls: true
   ws-opts:
-    path: /
+    path: /trTelegram🇨🇳 @WangCai2
     headers:
-      Host: kfm-bn0.pages.dev
+      Host: Koma-YT.PAGeS.Dev
   udp: true
-- name: 其他地区 02 @SCHPD_SUB
-  type: trojan
-  server: bpbg.anguswen.top
-  port: 8443
-  password: '123456'
-  sni: BPbG.AnguSWEN.Top
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /eyJqdW5rIjoiNDhOYUJ4WFhzc0EiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyJicGIueW91c2VmLmlzZWdhcm8uY29tIl19
-  udp: true
-- name: 法国 01 @SCHPD_SUB
-  type: vmess
-  server: 2001:bc8:32d7:302::10
-  port: 44579
-  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-    headers:
-      Host: AZERB.NET
-  udp: true
-- name: 瑞典 01 @SCHPD_SUB
-  type: trojan
-  server: 92.246.137.150
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 法国 02 @SCHPD_SUB
-  type: vmess
-  server: 2001:bc8:32d7:302::17
-  port: 44579
-  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-    headers:
-      Host: AZERB.NET
-  udp: true
-- name: 法国 03 @SCHPD_SUB
-  type: vmess
-  server: 2001:bc8:32d7:302::14
-  port: 44579
-  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
-    headers:
-      Host: TABRIZ.NET
-  udp: true
-- name: 德国 05 @SCHPD_SUB
-  type: trojan
-  server: 148.253.208.19
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 06 @SCHPD_SUB
-  type: trojan
-  server: 103.109.234.64
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 香港 02 @SCHPD_SUB
+- name: 荷兰 03 @SCHPD_SUB
   type: vless
-  server: 222.167.202.33
-  port: 7443
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  network: ws
-  servername: 2026.hhhhh.eu.org
-  tls: true
-  ws-opts:
-    path: /222.167.202.33:7443
-    headers:
-      Host: 2026.hhhhh.eu.org
-  udp: true
-- name: 瑞典 02 @SCHPD_SUB
-  type: trojan
-  server: 138.124.34.36
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 奥地利 02 @SCHPD_SUB
-  type: trojan
-  server: 152.53.227.239
-  port: 8443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 美国 02 @SCHPD_SUB
-  type: trojan
-  server: 64.188.89.147
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 奥地利 03 @SCHPD_SUB
-  type: trojan
-  server: 152.53.138.238
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 瑞典 03 @SCHPD_SUB
-  type: vless
-  server: 148.253.211.49
+  server: 89.125.123.248
   port: 443
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
-  servername: sni.111000.v6.rocks
+  servername: sni.latonyamadeline.ndjp.net
   tls: true
   ws-opts:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
-      Host: sni.111000.v6.rocks
+      Host: sni.latonyamadeline.ndjp.net
+  skip-cert-verify: true
   udp: true
-- name: 德国 07 @SCHPD_SUB
+- name: 爱沙尼亚 01 @SCHPD_SUB
   type: trojan
-  server: 143.20.175.77
+  server: 45.145.171.206
   port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
   tls: true
   ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    path: /trTelegram🇨🇳 @WangCai2
     headers:
-      Host: kfm-bn0.pages.dev
+      Host: Koma-YT.PAGeS.Dev
   udp: true
-- name: 德国 08 @SCHPD_SUB
+- name: 荷兰 04 @SCHPD_SUB
   type: trojan
-  server: 152.53.119.132
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 香港 03 @SCHPD_SUB
-  type: vless
-  server: 222.167.202.2
-  port: 7443
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  network: ws
-  servername: 2026.hhhhh.eu.org
-  tls: true
-  ws-opts:
-    path: /222.167.202.2:7443
-    headers:
-      Host: 2026.hhhhh.eu.org
-  udp: true
-- name: 德国 09 @SCHPD_SUB
-  type: trojan
-  server: 152.53.118.28
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 香港 04 @SCHPD_SUB
-  type: vless
-  server: 223.16.138.113
-  port: 10201
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.v6.rocks
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: sni.111000.v6.rocks
-  udp: true
-- name: 德国 10 @SCHPD_SUB
-  type: trojan
-  server: 109.70.74.67
-  port: 2053
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 瑞典 04 @SCHPD_SUB
-  type: trojan
-  server: 77.110.96.220
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 11 @SCHPD_SUB
-  type: trojan
-  server: 202.61.226.121
-  port: 2053
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 香港 05 @SCHPD_SUB
-  type: vmess
-  server: 103.181.164.145
-  port: 51556
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 德国 12 @SCHPD_SUB
-  type: trojan
-  server: 109.70.74.67
+  server: 152.53.200.89
   port: 8443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
   tls: true
   ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    path: /trTelegram🇨🇳 @WangCai2
     headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 13 @SCHPD_SUB
-  type: trojan
-  server: 94.125.101.103
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 14 @SCHPD_SUB
-  type: trojan
-  server: 159.195.5.181
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 美国 03 @SCHPD_SUB
-  type: vless
-  server: 154.17.12.212
-  port: 8443
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  network: ws
-  servername: sni.skylee4.cloudns.ch
-  tls: true
-  ws-opts:
-    path: /proxyip=ProxyIP.CMLiussss.net
-    headers:
-      Host: sni.skylee4.cloudns.ch
-  udp: true
-- name: 美国 04 @SCHPD_SUB
-  type: vless
-  server: 69.63.212.150
-  port: 443
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  network: ws
-  servername: sni.skylee4.cloudns.ch
-  tls: true
-  ws-opts:
-    path: /proxyip=ProxyIP.CMLiussss.net
-    headers:
-      Host: sni.skylee4.cloudns.ch
-  udp: true
-- name: 法国 04 @SCHPD_SUB
-  type: vmess
-  server: planb.mojcn.com
-  port: 16617
-  uuid: 1a97d136-a66b-4959-a9cc-42ab7fee9462
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 77ca334818bda4db538ebedbe42e0859.mobgslb.tbcache.com
-  udp: true
-- name: 瑞士 02 @SCHPD_SUB
-  type: trojan
-  server: 138.124.87.163
-  port: 8443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 美国 05 @SCHPD_SUB
-  type: vless
-  server: 74.211.100.81
-  port: 8443
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  network: ws
-  servername: sni.skylee4.cloudns.ch
-  tls: true
-  ws-opts:
-    path: /proxyip=ProxyIP.CMLiussss.net
-    headers:
-      Host: sni.skylee4.cloudns.ch
-  udp: true
-- name: 美国 06 @SCHPD_SUB
-  type: vless
-  server: 69.63.201.145
-  port: 8443
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  network: ws
-  servername: sni.skylee4.cloudns.ch
-  tls: true
-  ws-opts:
-    path: /proxyip=ProxyIP.CMLiussss.net
-    headers:
-      Host: sni.skylee4.cloudns.ch
-  udp: true
-- name: 瑞典 05 @SCHPD_SUB
-  type: trojan
-  server: 109.120.134.104
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 15 @SCHPD_SUB
-  type: trojan
-  server: 93.123.84.194
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 美国 07 @SCHPD_SUB
-  type: vless
-  server: 154.26.178.234
-  port: 8443
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  network: ws
-  servername: sni.skylee4.cloudns.ch
-  tls: true
-  ws-opts:
-    path: /proxyip=ProxyIP.CMLiussss.net
-    headers:
-      Host: sni.skylee4.cloudns.ch
-  udp: true
-- name: 德国 16 @SCHPD_SUB
-  type: trojan
-  server: 159.195.44.151
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 17 @SCHPD_SUB
-  type: trojan
-  server: 202.61.195.167
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 奥地利 04 @SCHPD_SUB
-  type: trojan
-  server: 77.110.116.7
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 18 @SCHPD_SUB
-  type: trojan
-  server: 144.31.216.160
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 瑞士 03 @SCHPD_SUB
-  type: trojan
-  server: 138.124.32.121
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 19 @SCHPD_SUB
-  type: trojan
-  server: 31.58.85.103
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 20 @SCHPD_SUB
-  type: trojan
-  server: 158.101.190.78
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 21 @SCHPD_SUB
-  type: trojan
-  server: 138.124.240.36
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 22 @SCHPD_SUB
-  type: trojan
-  server: 77.239.127.77
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 美国 08 @SCHPD_SUB
-  type: vless
-  server: 154.17.23.98
-  port: 443
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  network: ws
-  servername: sni.skylee4.cloudns.ch
-  tls: true
-  ws-opts:
-    path: /proxyip=ProxyIP.CMLiussss.net
-    headers:
-      Host: sni.skylee4.cloudns.ch
-  udp: true
-- name: 美国 09 @SCHPD_SUB
-  type: vless
-  server: 154.26.177.151
-  port: 8443
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  network: ws
-  servername: sni.skylee4.cloudns.ch
-  tls: true
-  ws-opts:
-    path: /proxyip=ProxyIP.CMLiussss.net
-    headers:
-      Host: sni.skylee4.cloudns.ch
-  udp: true
-- name: 美国 10 @SCHPD_SUB
-  type: vless
-  server: 138.128.192.254
-  port: 2053
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  network: ws
-  servername: sni.skylee4.cloudns.ch
-  tls: true
-  ws-opts:
-    path: /proxyip=ProxyIP.CMLiussss.net
-    headers:
-      Host: sni.skylee4.cloudns.ch
-  udp: true
-- name: 瑞士 04 @SCHPD_SUB
-  type: trojan
-  server: 138.124.32.0
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 美国 11 @SCHPD_SUB
-  type: trojan
-  server: 64.188.89.147
-  port: 8443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 捷克 03 @SCHPD_SUB
-  type: trojan
-  server: 95.85.234.43
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 瑞士 05 @SCHPD_SUB
-  type: trojan
-  server: 138.124.32.120
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 伊拉克 03 @SCHPD_SUB
-  type: trojan
-  server: 178.17.48.78
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 美国 12 @SCHPD_SUB
-  type: vless
-  server: 64.186.255.101
-  port: 8443
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  network: ws
-  servername: sni.skylee4.cloudns.ch
-  tls: true
-  ws-opts:
-    path: /proxyip=ProxyIP.CMLiussss.net
-    headers:
-      Host: sni.skylee4.cloudns.ch
-  udp: true
-- name: 瑞士 06 @SCHPD_SUB
-  type: trojan
-  server: 138.124.32.78
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 瑞士 07 @SCHPD_SUB
-  type: trojan
-  server: 138.124.28.78
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 捷克 04 @SCHPD_SUB
-  type: trojan
-  server: 95.85.232.148
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 伊朗 01 @SCHPD_SUB
-  type: trojan
-  server: 213.176.78.192
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 英国 01 @SCHPD_SUB
-  type: trojan
-  server: 144.31.213.59
-  port: 8443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 伊朗 02 @SCHPD_SUB
-  type: trojan
-  server: 213.176.77.231
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 美国 13 @SCHPD_SUB
-  type: trojan
-  server: 144.31.51.34
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 日本 01 @SCHPD_SUB
-  type: vless
-  server: dongjing4.zqjsqapi.com
-  port: 443
-  uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
-  network: ws
-  servername: dongjing4.zqjsqapi.com
-  tls: true
-  ws-opts:
-    path: /proxy
-  udp: true
-- name: 美国 14 @SCHPD_SUB
-  type: trojan
-  server: 2.27.35.199
-  port: 8443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 23 @SCHPD_SUB
-  type: trojan
-  server: 64.188.118.193
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 美国 15 @SCHPD_SUB
-  type: trojan
-  server: 185.170.153.115
-  port: 8443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 01 @SCHPD_SUB
-  type: trojan
-  server: 14.55.153.119
-  port: 50001
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 伊朗 03 @SCHPD_SUB
-  type: trojan
-  server: 213.176.77.30
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 24 @SCHPD_SUB
-  type: trojan
-  server: 80.244.13.157
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 25 @SCHPD_SUB
-  type: trojan
-  server: 144.31.85.72
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 26 @SCHPD_SUB
-  type: trojan
-  server: 103.109.234.41
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 27 @SCHPD_SUB
-  type: trojan
-  server: 144.31.139.103
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 28 @SCHPD_SUB
-  type: trojan
-  server: 193.23.218.192
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 29 @SCHPD_SUB
-  type: trojan
-  server: 144.31.118.170
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 30 @SCHPD_SUB
-  type: trojan
-  server: 80.253.249.66
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 阿联酋 01 @SCHPD_SUB
-  type: trojan
-  server: 104.128.139.68
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 31 @SCHPD_SUB
-  type: trojan
-  server: 144.31.138.127
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 32 @SCHPD_SUB
-  type: trojan
-  server: 148.253.215.61
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 33 @SCHPD_SUB
-  type: trojan
-  server: 185.219.84.221
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 34 @SCHPD_SUB
-  type: trojan
-  server: 144.31.62.181
-  port: 8443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 35 @SCHPD_SUB
-  type: trojan
-  server: 144.31.116.8
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 36 @SCHPD_SUB
-  type: trojan
-  server: 89.169.9.177
-  port: 2053
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 37 @SCHPD_SUB
-  type: trojan
-  server: 143.20.160.200
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 38 @SCHPD_SUB
-  type: trojan
-  server: 86.110.36.87
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 39 @SCHPD_SUB
-  type: trojan
-  server: 45.144.55.148
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 40 @SCHPD_SUB
-  type: trojan
-  server: 144.31.188.6
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 41 @SCHPD_SUB
-  type: trojan
-  server: 138.124.230.45
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 其他地区 03 @SCHPD_SUB
-  type: vless
-  server: 162.159.44.66
-  port: 2053
-  uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
-  network: ws
-  servername: fu.baiproxy.us.ci
-  tls: true
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: fu.baiproxy.us.ci
-  udp: true
-- name: 美国 16 @SCHPD_SUB
-  type: trojan
-  server: 64.188.115.82
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 42 @SCHPD_SUB
-  type: trojan
-  server: 2.27.120.108
-  port: 8443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 43 @SCHPD_SUB
-  type: trojan
-  server: 138.124.229.34
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 44 @SCHPD_SUB
-  type: trojan
-  server: 84.200.192.87
-  port: 8443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 45 @SCHPD_SUB
-  type: trojan
-  server: 84.200.192.87
-  port: 2053
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 46 @SCHPD_SUB
-  type: trojan
-  server: 144.31.191.159
-  port: 8443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 47 @SCHPD_SUB
-  type: trojan
-  server: 144.31.218.10
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 48 @SCHPD_SUB
-  type: trojan
-  server: 94.141.123.243
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 49 @SCHPD_SUB
-  type: trojan
-  server: 144.31.98.216
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 捷克 05 @SCHPD_SUB
-  type: trojan
-  server: 95.85.233.44
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 香港 06 @SCHPD_SUB
-  type: vmess
-  server: vm51544542.dns8656815.com
-  port: 7754
-  uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 美国 17 @SCHPD_SUB
-  type: vless
-  server: 154.26.189.70
-  port: 443
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  network: ws
-  servername: sni.skylee4.cloudns.ch
-  tls: true
-  ws-opts:
-    path: /proxyip=ProxyIP.CMLiussss.net
-    headers:
-      Host: sni.skylee4.cloudns.ch
-  udp: true
-- name: 捷克 06 @SCHPD_SUB
-  type: trojan
-  server: 95.85.233.224
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 荷兰 01 @SCHPD_SUB
-  type: trojan
-  server: 213.165.39.142
-  port: 2053
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 瑞典 06 @SCHPD_SUB
-  type: trojan
-  server: 138.124.24.229
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 50 @SCHPD_SUB
-  type: trojan
-  server: 194.164.198.156
-  port: 8443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 02 @SCHPD_SUB
-  type: trojan
-  server: 175.206.253.84
-  port: 19999
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 03 @SCHPD_SUB
-  type: trojan
-  server: 211.195.227.57
-  port: 15891
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 04 @SCHPD_SUB
-  type: trojan
-  server: 220.122.15.78
-  port: 13486
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 05 @SCHPD_SUB
-  type: trojan
-  server: 220.85.254.226
-  port: 20201
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 06 @SCHPD_SUB
-  type: trojan
-  server: 220.95.25.188
-  port: 10250
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 07 @SCHPD_SUB
-  type: trojan
-  server: 220.72.90.235
-  port: 10554
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 08 @SCHPD_SUB
-  type: trojan
-  server: 220.84.174.109
-  port: 27918
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 09 @SCHPD_SUB
-  type: trojan
-  server: 220.79.9.247
-  port: 11313
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 10 @SCHPD_SUB
-  type: trojan
-  server: 14.57.222.213
-  port: 20880
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 11 @SCHPD_SUB
-  type: trojan
-  server: 220.127.122.167
-  port: 22105
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 12 @SCHPD_SUB
-  type: trojan
-  server: 220.122.102.26
-  port: 30017
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 13 @SCHPD_SUB
-  type: trojan
-  server: 220.84.186.84
-  port: 10000
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 14 @SCHPD_SUB
-  type: trojan
-  server: 220.122.42.198
-  port: 18781
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 15 @SCHPD_SUB
-  type: trojan
-  server: 220.124.181.77
-  port: 18081
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 16 @SCHPD_SUB
-  type: trojan
-  server: 220.79.138.184
-  port: 34599
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 17 @SCHPD_SUB
-  type: trojan
-  server: 59.27.25.198
-  port: 10035
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 瑞典 07 @SCHPD_SUB
-  type: trojan
-  server: 138.124.49.137
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 18 @SCHPD_SUB
-  type: trojan
-  server: 220.93.106.4
-  port: 12345
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 19 @SCHPD_SUB
-  type: trojan
-  server: 220.87.108.247
-  port: 18000
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 20 @SCHPD_SUB
-  type: trojan
-  server: 220.125.240.77
-  port: 23424
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 21 @SCHPD_SUB
-  type: trojan
-  server: 220.127.68.28
-  port: 50001
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 22 @SCHPD_SUB
-  type: trojan
-  server: 220.72.32.44
-  port: 18080
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 香港 07 @SCHPD_SUB
-  type: vmess
-  server: efan.dnsefan04881.com
-  port: 7754
-  uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 韩国 23 @SCHPD_SUB
-  type: trojan
-  server: 222.113.18.214
-  port: 11310
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 24 @SCHPD_SUB
-  type: trojan
-  server: 220.79.203.64
-  port: 28080
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 25 @SCHPD_SUB
-  type: trojan
-  server: 112.164.151.157
-  port: 22222
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 26 @SCHPD_SUB
-  type: trojan
-  server: 118.47.197.17
-  port: 10088
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 27 @SCHPD_SUB
-  type: trojan
-  server: 220.122.42.198
-  port: 10995
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 28 @SCHPD_SUB
-  type: trojan
-  server: 220.78.7.17
-  port: 18001
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 29 @SCHPD_SUB
-  type: trojan
-  server: 220.76.161.128
-  port: 30303
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 30 @SCHPD_SUB
-  type: trojan
-  server: 220.87.185.18
-  port: 25448
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 31 @SCHPD_SUB
-  type: trojan
-  server: 59.26.177.217
-  port: 22105
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 32 @SCHPD_SUB
-  type: trojan
-  server: 220.87.152.138
-  port: 14000
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 33 @SCHPD_SUB
-  type: trojan
-  server: 14.32.205.160
-  port: 10035
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 34 @SCHPD_SUB
-  type: trojan
-  server: 220.79.9.247
-  port: 33338
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 35 @SCHPD_SUB
-  type: trojan
-  server: 220.80.37.219
-  port: 10909
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 36 @SCHPD_SUB
-  type: trojan
-  server: 211.195.61.136
-  port: 13722
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 37 @SCHPD_SUB
-  type: trojan
-  server: 220.85.254.226
-  port: 10162
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 38 @SCHPD_SUB
-  type: trojan
-  server: 121.132.124.22
-  port: 15000
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 39 @SCHPD_SUB
-  type: trojan
-  server: 220.127.168.186
-  port: 14147
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 40 @SCHPD_SUB
-  type: trojan
-  server: 14.58.60.153
-  port: 16992
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 51 @SCHPD_SUB
-  type: trojan
-  server: 94.156.114.13
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 41 @SCHPD_SUB
-  type: trojan
-  server: 220.123.75.80
-  port: 38241
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 42 @SCHPD_SUB
-  type: trojan
-  server: 59.16.213.86
-  port: 12300
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 43 @SCHPD_SUB
-  type: trojan
-  server: 222.113.18.214
-  port: 37215
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 44 @SCHPD_SUB
-  type: trojan
-  server: 220.85.252.224
-  port: 19150
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 45 @SCHPD_SUB
-  type: trojan
-  server: 59.4.161.71
-  port: 28017
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 46 @SCHPD_SUB
-  type: trojan
-  server: 220.87.152.138
-  port: 30005
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 47 @SCHPD_SUB
-  type: trojan
-  server: 220.81.144.229
-  port: 12300
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 48 @SCHPD_SUB
-  type: trojan
-  server: 220.79.9.247
-  port: 10001
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 49 @SCHPD_SUB
-  type: trojan
-  server: 220.85.254.226
-  port: 38241
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 50 @SCHPD_SUB
-  type: trojan
-  server: 220.124.181.251
-  port: 12300
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 51 @SCHPD_SUB
-  type: trojan
-  server: 220.127.122.167
-  port: 10003
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 52 @SCHPD_SUB
-  type: trojan
-  server: 220.93.106.4
-  port: 11001
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 53 @SCHPD_SUB
-  type: trojan
-  server: 220.85.254.226
-  port: 19999
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 54 @SCHPD_SUB
-  type: trojan
-  server: 220.79.203.64
-  port: 10030
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 55 @SCHPD_SUB
-  type: trojan
-  server: 220.118.97.223
-  port: 18080
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 56 @SCHPD_SUB
-  type: trojan
-  server: 220.85.254.226
-  port: 11434
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 52 @SCHPD_SUB
-  type: trojan
-  server: 23.251.50.142
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 57 @SCHPD_SUB
-  type: trojan
-  server: 220.127.168.186
-  port: 33848
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 58 @SCHPD_SUB
-  type: trojan
-  server: 220.77.18.195
-  port: 36814
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 59 @SCHPD_SUB
-  type: trojan
-  server: 220.90.53.189
-  port: 32677
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 以色列 01 @SCHPD_SUB
-  type: trojan
-  server: 103.13.211.113
-  port: 8443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 美国 18 @SCHPD_SUB
-  type: vless
-  server: 188.209.141.114
-  port: 56047
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  network: ws
-  servername: snippet.gfw.qzz.io
-  tls: true
-  ws-opts:
-    path: /danfeng
-    headers:
-      Host: snippet.gfw.qzz.io
-  udp: true
-- name: 奥地利 05 @SCHPD_SUB
-  type: trojan
-  server: 152.53.236.205
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 53 @SCHPD_SUB
-  type: trojan
-  server: 159.195.79.8
-  port: 8443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 韩国 60 @SCHPD_SUB
-  type: trojan
-  server: 220.77.136.79
-  port: 10911
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 美国 19 @SCHPD_SUB
-  type: trojan
-  server: 131.143.125.183
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 54 @SCHPD_SUB
-  type: trojan
-  server: 95.164.123.131
-  port: 8443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-  udp: true
-- name: 德国 55 @SCHPD_SUB
-  type: trojan
-  server: 64.188.105.7
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
+      Host: Koma-YT.PAGeS.Dev
   udp: true
 - name: 日本 02 @SCHPD_SUB
-  type: trojan
-  server: 13.192.183.245
-  port: 1783
-  password: BxceQaOe
-  sni: t.me%2Fripaojiedian
+  type: vmess
+  server: 103.127.243.59
+  port: 56738
+  uuid: 5f49c80e-7770-4bd1-9c86-43c2068a3a26
+  alterId: 0
+  cipher: auto
+  tls: false
   skip-cert-verify: true
-  tls: false
   udp: true
-- name: 美国 20 @SCHPD_SUB
-  type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 其他地区 04 @SCHPD_SUB
+- name: 拉脱维亚 02 @SCHPD_SUB
   type: vless
-  server: freeyx.cloudflare88.eu.org
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&proxyip=ip.111000.de5.net:443
-    headers:
-      Host: sni.111000.dynv6.net
-  udp: true
-- name: 瑞士 08 @SCHPD_SUB
-  type: vless
-  server: 185.18.250.238
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.jpmj.dev
-  tls: true
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.jpmj.dev
-  udp: true
-- name: 香港 08 @SCHPD_SUB
-  type: vless
-  server: 43.132.244.52
-  port: 21415
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.jpmj.dev
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.jpmj.dev
-  udp: true
-- name: 德国 56 @SCHPD_SUB
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 日本 03 @SCHPD_SUB
-  type: trojan
-  server: 18.183.182.241
-  port: 49534
-  password: BxceQaOe
-  sni: t.me/ripaojiedian
-  skip-cert-verify: true
-  tls: false
-  udp: true
-- name: 德国 57 @SCHPD_SUB
-  type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 美国 21 @SCHPD_SUB
-  type: vless
-  server: 85.209.153.60
-  port: 52335
-  uuid: 6ec3c298-1058-43bd-81e3-54b155c4ae21
-  servername: www.deepl.com
+  server: 193.163.203.76
+  port: 50556
+  uuid: 44fcf3b7-7baf-4b73-9f50-9f47967f7b29
+  servername: api-maps.yandex.ru
   tls: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
   reality-opts:
-    public-key: lwhFlU5V70GDf5OKTFeIAPC5uMKfvlGb3Y6nE-MmRmI
-    short-id: '72'
+    public-key: tqZ-C6M7YzjR_sJ-V3OgU3tLUAv-KnJ9BQfIYfnVOHo
+    short-id: 23a3dee422d0cd1c
+  skip-cert-verify: true
+  udp: true
+- name: 台湾 02 @SCHPD_SUB
+  type: hysteria2
+  server: vpn-tw-002.fastervpn.world
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-tw-002.fastervpn.world
+  skip-cert-verify: true
+  udp: true
+- name: 韩国 05 @SCHPD_SUB
+  type: trojan
+  server: 59.30.42.194
+  port: 12345
+  password: 433e785b-2077-47f7-a43d-985f63dd18d1
+  sni: vpn.rnmcnm.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: vpn.rnmcnm.com
+  udp: true
+- name: 韩国 06 @SCHPD_SUB
+  type: trojan
+  server: 14.53.107.138
+  port: 29999
+  password: 433e785b-2077-47f7-a43d-985f63dd18d1
+  sni: vpn.rnmcnm.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: vpn.rnmcnm.com
+  udp: true
+- name: 其他地区 03 @SCHPD_SUB
+  type: vless
+  server: france1cxc.chickenkiller.com
+  port: 443
+  uuid: d78c12c4-6927-40b8-8550-ed9be00334da
+  servername: France1cxc.chickenkiller.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: UJSYKOEr3a3V1P_obd9zNBq4Pr3Vbd_a2nHE7-rstRk
+    short-id: 6089640857a72237
+  skip-cert-verify: true
+  udp: true
+- name: 德国 07 @SCHPD_SUB
+  type: vless
+  server: 87.120.93.146
+  port: 443
+  uuid: 91e120bc-159a-4390-b4e1-197b19602ea0
+  servername: sub.sbrf-cdn342.ru
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: qq
+  skip-cert-verify: true
+  udp: true
+- name: 摩尔多瓦 01 @SCHPD_SUB
+  type: vless
+  server: 91.225.217.28
+  port: 443
+  uuid: 296bbba2-b100-4d91-b8df-3fe03cc863c4
+  servername: yahoo.com
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: CnFVrSvJ1Mhl_6QqKCCvXtEdlaJjN4MXWBkSswJ_gX0
+    short-id: 106c
+  skip-cert-verify: true
+  udp: true
+- name: 挪威 01 @SCHPD_SUB
+  type: vless
+  server: long-forest.ru
+  port: 443
+  uuid: cca617a2-ede0-4855-a2ef-cc7f218ba75d
+  servername: winter-pine.long-forest.ru
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: GFKdmtxlB5JubXEfTy6PNIeuqN8ys53SPwV3zat3Fzg
+    short-id: 3c6a5f13df37ed6e
+  skip-cert-verify: true
+  udp: true
+- name: 瑞典 02 @SCHPD_SUB
+  type: vless
+  server: 132.243.231.122
+  port: 8443
+  uuid: 7625adbb-52f7-4ff4-95f8-677471071a77
+  servername: io.ozone.ru
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: A9jwrodyycJJV-apFQ91_rrh1vfJ_hSzZGNP9GBPGCM
+    short-id: 92d0c4089b6c1da3
+  skip-cert-verify: true
+  udp: true
+- name: 德国 08 @SCHPD_SUB
+  type: vless
+  server: 87.120.126.205
+  port: 443
+  uuid: 91e120bc-159a-4390-b4e1-197b19602ea0
+  servername: sub.sbrf-cdn342.ru
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: qq
+  skip-cert-verify: true
+  udp: true
+- name: 德国 09 @SCHPD_SUB
+  type: vless
+  server: ger-nnn.prostosetup.org
+  port: 443
+  uuid: 1b43419a-b711-40d4-a0ee-eb5c73e60c92
+  servername: github.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: y3ZMu-ium5mBqE_h3xJ66vT0Z6HCIlTDti9emCQjDjw
+    short-id: bcb6b0217a1206b3
+  skip-cert-verify: true
+  udp: true
+- name: 英国 01 @SCHPD_SUB
+  type: vless
+  server: 77.75.199.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime59.workers.dev
+  skip-cert-verify: true
+  udp: true
+- name: 澳大利亚 01 @SCHPD_SUB
+  type: trojan
+  server: au-4.tr202605.com
+  port: 443
+  password: 65fQmPHHbPcBCfvSHt
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 爱沙尼亚 02 @SCHPD_SUB
+  type: vless
+  server: 45.80.110.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime51.workers.dev
+  skip-cert-verify: true
+  udp: true
+- name: 拉脱维亚 03 @SCHPD_SUB
+  type: vless
+  server: 90.156.254.164
+  port: 19562
+  uuid: 5b96be74-656d-4bb7-85c2-d2d8a3b7c2f3
+  servername: yahoo.com
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: T66pm2f_PN4Hya_A_5K0X1HQb717SUCODyoUO7Gk3Ws
+    short-id: 9e
+  skip-cert-verify: true
+  udp: true
+- name: 美国 09 @SCHPD_SUB
+  type: vless
+  server: 72.167.230.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime51.workers.dev
+  skip-cert-verify: true
+  udp: true
+- name: 台湾 03 @SCHPD_SUB
+  type: trojan
+  server: 211.76.176.98
+  port: 19128
+  password: gcuCpQfaiVeDBdWG
+  sni: yazhou10.dynu.net
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 西班牙 01 @SCHPD_SUB
+  type: trojan
+  server: 103.45.245.208
+  port: 2053
+  password: rYuChHcwQZskq9E0zdoR
+  sni: vpn5.rnmcnm.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /ws-79dffb8106db
+    headers:
+      Host: vpn5.rnmcnm.com
+  udp: true
+- name: 俄罗斯联邦 04 @SCHPD_SUB
+  type: vmess
+  server: renderer-stream-1-411.mirra.now
+  port: 443
+  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-1-411.mirra.now
+  udp: true
+- name: 阿联酋 01 @SCHPD_SUB
+  type: hysteria2
+  server: hy2.aspidnet.xyz
+  port: 443
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+  udp: true
+- name: 新加坡 01 @SCHPD_SUB
+  type: vless
+  server: 43.175.169.174
+  port: 443
+  uuid: 37c8b06a-25cf-42d7-b2ea-31d3c8561998
+  network: ws
+  servername: sni.mmadcoffee.info
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /14708/31d3c8561998/
+    headers:
+      Host: imap.mmadcoffee.info
+  skip-cert-verify: true
+  udp: true
+- name: 其他地区 04 @SCHPD_SUB
+  type: vless
+  server: youxuan.cf.090227.xyz
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  network: ws
+  servername: rvbtoc55o588ipfx2qieoygyk0hur.saghv.filegear-sg.me
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /@Marisa_kristi
+  skip-cert-verify: true
+  udp: true
+- name: 香港 03 @SCHPD_SUB
+  type: vless
+  server: hk03zl.lovetutujiejie.com
+  port: 443
+  uuid: 93c3bc8e-76fb-43ad-beab-3bb79dd64e57
+  servername: apple.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+  reality-opts:
+    public-key: WKQGR44enLDcX6d8WWPb-bCO20x7fOi9-LsFzv9UOn8
+    short-id: '99'
+  skip-cert-verify: true
+  udp: true
+- name: 美国 10 @SCHPD_SUB
+  type: trojan
+  server: adak.sonofthewinds.com
+  port: 34436
+  password: 825929f4-c702-35ce-9124-00d3f95b8c32
+  sni: hh4.sonofthewinds.com
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 美国 11 @SCHPD_SUB
+  type: trojan
+  server: adak.sonofthewinds.com
+  port: 34450
+  password: 825929f4-c702-35ce-9124-00d3f95b8c32
+  sni: tt1.sonofthewinds.com
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 美国 12 @SCHPD_SUB
+  type: trojan
+  server: adak.sonofthewinds.com
+  port: 34470
+  password: 825929f4-c702-35ce-9124-00d3f95b8c32
+  sni: gj1.sonofthewinds.com
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 新加坡 02 @SCHPD_SUB
+  type: vless
+  server: 199.232.47.9
+  port: 80
+  uuid: 96eec36e-2c44-5b09-898e-6f0f0526e57f
+  network: http
+  tls: false
+  http-opts:
+    path:
+    - /Tignal?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host:
+      - tignaltofansv5.global.ssl.fastly.net
+  skip-cert-verify: true
+  udp: true
+- name: 新加坡 03 @SCHPD_SUB
+  type: vless
+  server: 199.232.47.99
+  port: 80
+  uuid: 5cdf99d3-a51b-570e-8245-f87d674dc652
+  network: http
+  tls: false
+  http-opts:
+    path:
+    - /?https://t.me/WangCai2🇨🇳
+    headers:
+      Host:
+      - InternetAzadRobot31dx253.global.ssl.fastly.net
+  skip-cert-verify: true
+  udp: true
+- name: 美国 13 @SCHPD_SUB
+  type: vless
+  server: 199.36.158.10
+  port: 80
+  uuid: 5cdf99d3-a51b-570e-8245-f87d674dc652
+  network: http
+  tls: false
+  http-opts:
+    path:
+    - /?https://t.me/WangCai2🇨🇳
+    headers:
+      Host:
+      - InternetAzadRobot31dx253.global.ssl.fastly.net
+  skip-cert-verify: true
+  udp: true
+- name: 美国 14 @SCHPD_SUB
+  type: vless
+  server: 155.46.167.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    headers:
+      Host: vms.lifetime50.workers.dev
+  skip-cert-verify: true
+  udp: true
+- name: 美国 15 @SCHPD_SUB
+  type: vless
+  server: 151.101.71.119
+  port: 80
+  uuid: 96eec36e-2c44-5b09-898e-6f0f0526e57f
+  network: http
+  tls: false
+  http-opts:
+    path:
+    - /Tignal?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host:
+      - tignaltofansv5.global.ssl.fastly.net
+  skip-cert-verify: true
+  udp: true
+- name: 美国 16 @SCHPD_SUB
+  type: vless
+  server: 151.101.56.119
+  port: 80
+  uuid: 96eec36e-2c44-5b09-898e-6f0f0526e57f
+  network: http
+  tls: false
+  http-opts:
+    path:
+    - /Tignal?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host:
+      - tignaltofansv5.global.ssl.fastly.net
+  skip-cert-verify: true
+  udp: true
+- name: 美国 17 @SCHPD_SUB
+  type: vless
+  server: 151.101.171.119
+  port: 80
+  uuid: 96eec36e-2c44-5b09-898e-6f0f0526e57f
+  network: http
+  tls: false
+  http-opts:
+    path:
+    - /Tignal?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host:
+      - tignaltofansv5.global.ssl.fastly.net
+  skip-cert-verify: true
+  udp: true
+- name: 瑞典 03 @SCHPD_SUB
+  type: vless
+  server: 81.177.212.44
+  port: 443
+  uuid: 039a1658-e86e-475f-a3a4-67cc249acada
+  servername: sw1.panel11.ru
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: UQLa8BZNvHnwWL7pUnMbO046iRPh0jGhvA2xtjJRgQE
+    short-id: 8b263e22ba03b4c1
+  skip-cert-verify: true
+  udp: true
+- name: 瑞士 01 @SCHPD_SUB
+  type: vless
+  server: 83.228.235.106
+  port: 443
+  uuid: 83989465-4ec6-4dbe-97c6-2779df88d9e0
+  servername: varzesh3.com
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: MK3NN842R-fVl71Rdcn9oLAQNJrd-igvxPaKS_c6928
+    short-id: accd8c
+  skip-cert-verify: true
+  udp: true
+- name: 美国 18 @SCHPD_SUB
+  type: vless
+  server: 185.170.154.202
+  port: 443
+  uuid: df7a61b3-fcfb-4e88-aea6-460f83a32823
+  servername: nodg.me3op.site
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: T6p0Kn_9VfKQfBrDoBEuPoNZYNeY0VFrl6H6bmh3xhk
+    short-id: 3fa80f1d8a977c80
+  skip-cert-verify: true
+  udp: true
+- name: 捷克 01 @SCHPD_SUB
+  type: vless
+  server: 103.200.28.142
+  port: 7443
+  uuid: 89304de3-af59-4313-b18d-c93dadf54537
+  servername: icloud.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: _GHDETa6pflP7WjkBT-2jMYnb0xRs-e8LrCu93Z_CHo
+    short-id: d82fb387
+  skip-cert-verify: true
   udp: true
 - name: 其他地区 05 @SCHPD_SUB
-  type: vless
-  server: 162.159.38.147
+  type: trojan
+  server: blackshadow.dpdns.org
   port: 443
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  network: ws
-  servername: snippet.fgfw.loc.cc
+  password: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
+  sni: blackshadow.dpdns.org
+  skip-cert-verify: true
   tls: true
   ws-opts:
-    path: /danfeng?ed=2560
+    path: /195.123.218.174-443
     headers:
-      Host: snippet.fgfw.loc.cc
+      Host: blackshadow.dpdns.org
+  udp: true
+- name: 美国 19 @SCHPD_SUB
+  server: 208.103.161.101
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.creationlong.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.creationlong.org
+  udp: true
+- name: 新加坡 04 @SCHPD_SUB
+  server: 207.148.125.245
+  port: 8443
+  type: trojan
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  sni: tjsp.hhxaf.cc.cd
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: tjsp.hhxaf.cc.cd
+  udp: true
+- name: 新加坡 05 @SCHPD_SUB
+  server: 139.180.222.3
+  port: 443
+  type: trojan
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  sni: tjsp.hhxaf.cc.cd
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: tjsp.hhxaf.cc.cd
+  udp: true
+- name: 美国 20 @SCHPD_SUB
+  server: 154.26.180.8
+  port: 443
+  type: trojan
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  sni: tjsp.hhxaf.cc.cd
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: tjsp.hhxaf.cc.cd
+  udp: true
+- name: 日本 03 @SCHPD_SUB
+  server: 45.77.129.86
+  port: 2053
+  type: trojan
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  sni: tjsp.hhxaf.cc.cd
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: tjsp.hhxaf.cc.cd
+  udp: true
+- name: 香港 04 @SCHPD_SUB
+  server: 45.136.14.61
+  port: 2053
+  type: trojan
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  sni: tjsp.hhxaf.cc.cd
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: tjsp.hhxaf.cc.cd
+  udp: true
+- name: 美国 21 @SCHPD_SUB
+  server: 154.17.4.159
+  port: 2053
+  type: trojan
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  sni: hhcm.hhxaf.cc.cd
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hhcm.hhxaf.cc.cd
+  udp: true
+- name: 美国 22 @SCHPD_SUB
+  server: 165.227.60.163
+  port: 2082
+  type: vmess
+  uuid: 52b09f69-a832-4070-b9c3-6f10aeb24c6a
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: 52b09f69-a832-4070-b9c3-6f10aeb24c6a-vm
+  udp: true
+- name: 德国 10 @SCHPD_SUB
+  server: 2.26.54.174
+  port: 8448
+  type: trojan
+  password: TrojanPass2026%21
+  sni: foolsland.ru
+  skip-cert-verify: true
+  udp: true
+- name: 其他地区 06 @SCHPD_SUB
+  server: 172.64.146.27
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.gossipglove.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.gossipglove.com
+  udp: true
+- name: 其他地区 07 @SCHPD_SUB
+  server: 104.18.152.144
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.ignitelimit.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+  udp: true
+- name: 新加坡 06 @SCHPD_SUB
+  server: 140.245.62.90
+  port: 2096
+  type: trojan
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  sni: tjsp.hhxaf.cc.cd
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: tjsp.hhxaf.cc.cd
+  udp: true
+- name: 香港 05 @SCHPD_SUB
+  server: 45.38.42.198
+  port: 2053
+  type: trojan
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  sni: tjsp.hhxaf.cc.cd
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: tjsp.hhxaf.cc.cd
+  udp: true
+- name: 美国 23 @SCHPD_SUB
+  server: cu2.ainivp.com
+  port: 33200
+  type: vmess
+  uuid: 9204afcd-026e-781f-1abc-c03efabd1344
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ray
+    headers:
+      Host: cu2.ainivp.com
+  udp: true
+- name: 香港 06 @SCHPD_SUB
+  server: 103.177.136.45
+  port: 46424
+  type: trojan
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: de.01.naiun.bilibili.com
+  skip-cert-verify: true
+  udp: true
+- name: 香港 07 @SCHPD_SUB
+  server: 103.177.136.45
+  port: 45619
+  type: trojan
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: fr.01.naiun.bilibili.com
+  skip-cert-verify: true
+  udp: true
+- name: 香港 08 @SCHPD_SUB
+  server: 103.177.136.45
+  port: 45553
+  type: trojan
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: ch.01.naiun.bilibili.com
+  skip-cert-verify: true
   udp: true
 - name: 香港 09 @SCHPD_SUB
-  type: vmess
-  server: 213.156.141.52
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
+  server: 103.177.136.45
+  port: 48697
+  type: trojan
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: gh.01.naiun.bilibili.com
+  skip-cert-verify: true
   udp: true
-- name: 加拿大 01 @SCHPD_SUB
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
+- name: 香港 10 @SCHPD_SUB
+  server: 103.177.136.42
+  port: 45553
+  type: trojan
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: ch.01.naiun.bilibili.com
+  skip-cert-verify: true
   udp: true
-- name: 日本 04 @SCHPD_SUB
-  type: vless
-  server: 43.167.157.65
-  port: 12345
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
+- name: 香港 11 @SCHPD_SUB
+  server: 103.177.136.42
+  port: 46424
+  type: trojan
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: de.01.naiun.bilibili.com
+  skip-cert-verify: true
+  udp: true
+- name: 香港 12 @SCHPD_SUB
+  server: 103.177.136.42
+  port: 45619
+  type: trojan
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: fr.01.naiun.bilibili.com
+  skip-cert-verify: true
+  udp: true
+- name: 香港 13 @SCHPD_SUB
+  server: 103.177.136.42
+  port: 47909
+  type: trojan
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: is.01.naiun.bilibili.com
+  skip-cert-verify: true
+  udp: true
+- name: 香港 14 @SCHPD_SUB
+  server: 103.177.136.42
+  port: 41943
+  type: trojan
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: az.01.naiun.bilibili.com
+  skip-cert-verify: true
+  udp: true
+- name: 香港 15 @SCHPD_SUB
+  server: 103.177.136.45
+  port: 41943
+  type: trojan
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: az.01.naiun.bilibili.com
+  skip-cert-verify: true
+  udp: true
+- name: 香港 16 @SCHPD_SUB
+  server: 103.177.136.42
+  port: 48697
+  type: trojan
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: gh.01.naiun.bilibili.com
+  skip-cert-verify: true
+  udp: true
+- name: 香港 17 @SCHPD_SUB
+  server: 103.177.136.45
+  port: 47909
+  type: trojan
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: is.01.naiun.bilibili.com
+  skip-cert-verify: true
+  udp: true
+- name: 美国 24 @SCHPD_SUB
+  server: 165.215.250.14
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
   network: ws
-  servername: snippet.fgfw.loc.cc
-  tls: true
   ws-opts:
-    path: /danfeng?ed=2560
+    path: /assignment
     headers:
-      Host: snippet.fgfw.loc.cc
+      Host: www.calmlunch.com
   udp: true
-- name: 德国 58 @SCHPD_SUB
+- name: 其他地区 08 @SCHPD_SUB
+  server: 104.16.0.0
+  port: 443
   type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  uuid: 95d2c461-61f5-4dae-bc74-4d10ce1f6236
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: gongyilm.dpdns.org
+  network: ws
+  ws-opts:
+    path: /ws-gongyi
+    headers:
+      Host: gongyilm.dpdns.org
+  udp: true
+- name: 香港 18 @SCHPD_SUB
+  server: efan.dnsefan04881.com
+  port: 7754
+  type: vmess
+  uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: false
+  udp: true
+- name: 罗马尼亚 01 @SCHPD_SUB
+  server: cdn9-33.vk-cdnvideo.com
+  port: 8443
+  type: vless
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+  tls: true
+  tfo: false
+  skip-cert-verify: false
+  network: tcp
+  udp: true
+- name: 其他地区 09 @SCHPD_SUB
+  server: 104.17.121.9
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  alpn:
+  - http%2F1.1
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+  udp: true
+- name: 其他地区 10 @SCHPD_SUB
+  server: 104.20.6.134
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.calmloud.com
+  alpn:
+  - http%2F1.1
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmloud.com
+  udp: true
+- name: 奥地利 01 @SCHPD_SUB
+  server: 185.126.236.44
+  port: 443
+  type: trojan
+  password: BSs5IAVMQdYuykvDsOYZoa6gNPSGBjAbLL
+  sni: www.mesaly.click
+  skip-cert-verify: false
+  udp: true
+- name: 德国 11 @SCHPD_SUB
+  server: 91.233.8.25
+  port: 443
+  type: trojan
+  password: I1vtf6pjYsAu-nFnraWAMjKTy90AHitdAz
+  sni: fra34.tracker-ws.click
+  skip-cert-verify: false
+  udp: true
+- name: 其他地区 11 @SCHPD_SUB
+  server: www.parsvds.com
+  port: 8080
+  type: vless
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  tls: false
+  tfo: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: tr-cd.sublink-vip2.com
+  udp: true
+- name: 法国 01 @SCHPD_SUB
+  type: vless
+  server: fr.noooo.win
+  port: 443
+  uuid: 7b241232-208d-4d36-857e-913f91b044f4
+  tls: true
+  flow: xtls-rprx-vision
+  skip-cert-verify: true
+  udp: true
+- name: 香港 19 @SCHPD_SUB
+  type: vless
+  server: 47.86.55.200
+  port: 19321
+  uuid: 394086c4-d8a4-4298-9b62-f70fa711082d
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 香港 20 @SCHPD_SUB
+  type: vmess
+  server: 154.37.223.19
+  port: 56972
+  uuid: ae225455-5e8c-491d-d931-c06ac56f4aee
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: http
+  udp: true
+- name: 印度尼西亚 01 @SCHPD_SUB
+  type: vmess
+  server: v35.hdacd.com
+  port: 30835
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 香港 21 @SCHPD_SUB
+  type: vmess
+  server: v10.hdacd.com
+  port: 30807
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 美国 25 @SCHPD_SUB
+  type: trojan
+  server: 90081bb25c.node.tro.cac.cab
+  port: 41943
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: az.01.naiun.bilibili.com
+  skip-cert-verify: true
+  tls: false
+  udp: true
+- name: 印度尼西亚 02 @SCHPD_SUB
+  type: vmess
+  server: v36.hdacd.com
+  port: 30836
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 美国 26 @SCHPD_SUB
+  type: vless
+  server: 47.77.214.201
+  port: 10035
+  uuid: e4e7866d-920b-4a53-a8e2-6ae9b2a42fc2
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 美国 27 @SCHPD_SUB
+  type: trojan
+  server: 90081bb25c.node.tro.cac.cab
+  port: 48697
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: gh.01.naiun.bilibili.com
+  skip-cert-verify: true
+  tls: false
   udp: true
